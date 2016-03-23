@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - dili_user@10.28.6.55" uuid="aa79edc0-095f-4fd4-8c40-e4bc5910aa4c">
+    <database-info product="MySQL" version="5.5.5-10.0.11-MariaDB-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.36 ( Revision: 4fc1f969f740409a4e03750316df2c0e429f3dc8 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <schema name="" catalog="dili_shop"/>
+    <schema name="" catalog="dili_user"/>
+    <table name="t_order_remind_log" schema="" catalog="dili_shop" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="order_status" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="order_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="remind_shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="yn" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MQ=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_shop" schema="" catalog="dili_shop" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="55So5oi3SUQ="/>
+      <column name="shop_name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5bqX6ZO65ZCN56ew"/>
+      <column name="shop_domain" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5bqX6ZO65Z+f5ZCN"/>
+      <column name="shop_logo" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12" remarks="5bqX6ZO6TE9HTw=="/>
+      <column name="shop_head_img" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12" remarks="5bqX6ZO65aS06YOo5Zu+54mH"/>
+      <column name="address_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5omA5Zyo5Zyw5Z2ASUQ="/>
+      <column name="address_text" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5omA5Zyo5Zyw5Z2A6K+m5oOF"/>
+      <column name="category_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="57uP6JCl57G755uu"/>
+      <column name="remark" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12" remarks="5bqX6ZO65o+P6L+w"/>
+      <column name="contact_user" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="6IGU57O75Lq6"/>
+      <column name="contact_sex" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="MTrnlLcsIDI65aWz"/>
+      <column name="contact_phone" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5Zu65a6a55S16K+d"/>
+      <column name="contact_state" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="6IGU57O75rig6YGT5byA5pS+54q25oCB77yaMS7mmL7npLrvvIwy77ya5LiN5pi+56S6"/>
+      <column name="contact_fax" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5Lyg55yf5Y+356CB"/>
+      <column name="market_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5biC5Zy6SUQ="/>
+      <column name="shop_state" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="MTrlrqHmoLjkuK0sICAyOuWuoeaguOmAmui/hywgMzrlrqHmoLjkuI3pgJrov4c="/>
+      <column name="audit_remark" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12" remarks="5a6h5qC45o+P6L+w"/>
+      <column name="shop_type" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="MDroh6rokKUgMTrnrKzkuInmlrk="/>
+      <column name="shop_source" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MQ==" remarks="5bqX6ZO65p2l5rqQOjEg5om55Y+R5ZWG5oi3IDIg5Lqn5Zyw5ZWG5oi3IDMg5Yac5oi35ZWG5oi3IDQg6Zu25ZSu5ZWG5oi3IDUg5Luj6LSt5ZWG5oi3IDYg54mp5rWB5ZWG5oi3ICA="/>
+      <column name="space_size" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" def="MA==" remarks="5re75Yqg5LiK5Lyg56m66Ze05aSn5bCP"/>
+      <column name="audit_request_time" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="audit_time" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="credit_state" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="Mw==" remarks="6LWK6LSm5Yqf6IO954q25oCBKDE65byA5ZCvLCAyOuWFs+mXrSAsMzrku47mnKrlvIDlkK/ov4cp"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ==" remarks="MTogIOacieaViCwgMjrml6DmlYg="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <column name="account_name" sqlType="VARCHAR" precision="36" scale="0" nullable="true" jdbcType="12"/>
+      <column name="category_name" sqlType="VARCHAR" precision="36" scale="0" nullable="true" jdbcType="12"/>
+      <column name="city_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5bqX6ZO65omA5Zyo5Z+O5biCaWQ="/>
+      <column name="addr_modify_time" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="5bqX6ZO65Zyw5Z2A5L+u5pS55pe26Ze0"/>
+      <column name="statistics_market" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" def="MA==" remarks="57uf6K6h5b2S5bGe5biC5Zy6SUQ="/>
+      <column name="support_expressage" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="5piv5ZCm5pSv5oyB56ys5LiJ5pa55b+r6YCS77yMMS3kuI3mlK/mjIHvvJsy5pSv5oyB77yb"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_shop_expressage" schema="" catalog="dili_shop" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="company" sqlType="VARCHAR" precision="60" scale="0" nullable="false" jdbcType="12"/>
+      <column name="first_weight" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="first_price" sqlType="DECIMAL" precision="11" scale="2" nullable="false" jdbcType="3"/>
+      <column name="continue_price" sqlType="DECIMAL" precision="11" scale="2" nullable="false" jdbcType="3"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="MS3mraPluLjvvJsy5Yig6Zmk77yb"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="modified" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_shop_grade" schema="" catalog="dili_shop" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="5bqX6ZO6SUQ="/>
+      <column name="grade_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5bqX6ZO6562J57qnSUQ="/>
+      <column name="is_dishonesty" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ==" remarks="5piv5ZCm5aSx5L+hIDHjgIHlkKYgMuOAgeaYryAgKOm7mOiupOWQpik="/>
+      <column name="is_soptauth" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ==" remarks="5piv5ZCm5a6e5Zyw6K6k6K+BICAx44CB5ZCmIDLjgIHmmK8gICjpu5jorqTlkKYpIA=="/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ==" remarks="MTogIOacieaViCwgMjrml6DmlYg="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="shop_id" unique="false" columns="shop_id"/>
+    </table>
+    <table name="t_shop_image" schema="" catalog="dili_shop" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="category_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="img_src" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12"/>
+      <column name="creator" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_shop_image_category" schema="" catalog="dili_shop" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="category_name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="parent_category" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_shop_others_different" schema="" catalog="dili_shop" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="5bqX6ZO6SUQ="/>
+      <column name="manage_type" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="57uP6JCl57G75Z6L"/>
+      <column name="market_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5omA5Zyo5biC5Zy6"/>
+      <column name="merchant_type" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5ZWG5oi357G75Z6L"/>
+      <column name="purchasing_areaID" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5Luj6LSt5Yy65Z+fSUQ="/>
+      <column name="purchasing_address_text" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5Luj6LSt5Yy65Z+f6K+m57uG5Zyw5Z2A"/>
+      <column name="purchasing_type" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ==" remarks="MSDluILlnLrku6PotK0gMuOAgeS6p+WcsOS7o+i0rQ=="/>
+      <column name="logistics_type_ID" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="54mp5rWB57G75Z6LSUQ="/>
+      <column name="major_line" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5Li76JCl57q/6Lev"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ==" remarks="MTogIOacieaViCwgMjrml6DmlYgg"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <column name="reason" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5YWz5bqX5Y6f5Zug77yI5LuO5pWw5o2u5a2X5YW46YCJ5Y+W55qE77yM5aSa5Liq5Y6f5Zug55So6Iux5paH6YCX5Y+36ZqU5byA77yJ"/>
+      <column name="other_reason" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5YWz5bqX5Y6f5Zug77yI5omL5Yqo6L6T5YWl55qE77yJ"/>
+      <column name="logistics_support_check" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="5piv5ZCm5pSv5oyB5Luj6aqM6LSn77yMMS3kuI3mlK/mjIHvvJsy5pSv5oyB77yb"/>
+      <column name="logistics_support_collection" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="5piv5ZCm5pSv5oyB5Luj6ZuG6LSn77yMMS3kuI3mlK/mjIHvvJsy5pSv5oyB77yb"/>
+      <column name="logistics_price" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="54mp5rWB5Y2V5Lu36LS555So"/>
+      <column name="buy_support_buy" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="5piv5ZCm5pSv5oyB5Luj5Lmw6LSn77yMMS3kuI3mlK/mjIHvvJsy5pSv5oyB77yb"/>
+      <column name="buy_support_check" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="5piv5ZCm5pSv5oyB5Luj6aqM6LSn77yMMS3kuI3mlK/mjIHvvJsy5pSv5oyB77yb"/>
+      <column name="buy_support_collection" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="5piv5ZCm5pSv5oyB5Luj6ZuG6LSn77yMMS3kuI3mlK/mjIHvvJsy5pSv5oyB77yb"/>
+      <column name="buy_support_logistics" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="5piv5ZCm5pSv5oyB5Luj54mp5rWB5pyN5Yqh77yMMS3kuI3mlK/mjIHvvJsy5pSv5oyB77yb"/>
+      <column name="buy_price" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5Luj6LSt5Y2V5Lu36LS555So"/>
+      <column name="logistics_price_min" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" def="MA==" remarks="5Lu35qC86IyD5Zu05bCP5YC8"/>
+      <column name="logistics_price_max" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" def="MA==" remarks="5Lu35qC86IyD5Zu05pyA5aSn5YC8"/>
+      <column name="reason_code" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5YWz5bqX5Y6f5Zug77yI5LuO5pWw5o2u5a2X5YW46YCJ5Y+W55qE77yM5aSa5Liq5Y6f5Zug55So6Iux5paH6YCX5Y+36ZqU5byA77yJ"/>
+      <column name="reason_other" sqlType="VARCHAR" precision="200" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5YWz5bqX5Y6f5Zug77yI5omL5Yqo6L6T5YWl55qE77yJ"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_shop_product_category" schema="" catalog="dili_shop" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="category_name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_shop_product_category_rel" schema="" catalog="dili_shop" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="product_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="category_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_shop_product_recommend" schema="" catalog="dili_shop" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5bqX6ZO6aWQ="/>
+      <column name="productId" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5ZWG5ZOBaWQ="/>
+      <column name="yn" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" def="MQ=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="5Yib5bu65pe26Ze0"/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="5L+u5pS55pe26Ze0"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_shop_qualifications" schema="" catalog="dili_shop" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5bqX6ZO6SUQ="/>
+      <column name="qualified_name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="6LWE6LSo5ZCN56ew"/>
+      <column name="qualified_image" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12" remarks="6LWE6LSo5Zu+54mH"/>
+      <column name="authority" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="6aKB5Y+R5py65p6E"/>
+      <column name="state" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="5a6h5qC454q25oCBMTrpgJrov4csMuWuoeaguOS4re+8jDPvvIzmnKrpgJrov4c="/>
+      <column name="award_date" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="6aKB5Y+R5pel5pyf"/>
+      <column name="effect_date" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="5pyJ5pWI5pyf"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_shop_rel" schema="" catalog="dili_shop" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="type" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="MS3ku6PotK3lk4HnsbvjgIEyLeS7o+i0reW4guWcuuOAgTMt5Luj6LSt5Yy65Z+f"/>
+      <column name="biz_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_shop_send_address" schema="" catalog="dili_shop" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="contact" sqlType="VARCHAR" precision="16" scale="0" nullable="true" jdbcType="12"/>
+      <column name="mobile" sqlType="VARCHAR" precision="16" scale="0" nullable="true" jdbcType="12"/>
+      <column name="telephone" sqlType="VARCHAR" precision="16" scale="0" nullable="true" jdbcType="12"/>
+      <column name="city_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="addressText" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="is_default" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="yn" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_shop_slide" schema="" catalog="dili_shop" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="sort" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6"/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5bqX6ZO6SUQ="/>
+      <column name="img_src" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12" remarks="5Zu+54mH5Zyw5Z2A"/>
+      <column name="link" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12" remarks="6ZO+5o6l5Zyw5Z2A"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_vipuser_info" schema="" catalog="dili_shop" type="TABLE">
+      <column name="ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5bqX6ZO6SUQ="/>
+      <column name="mobile" sqlType="VARCHAR" precision="15" scale="0" nullable="true" jdbcType="12"/>
+      <column name="user_name" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="VklQ6LSm5oi35ZCN"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="MTogIOacieaViCwgMjrml6DmlYg="/>
+      <column name="openclose_flag" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="MTogIOW8gOWQrywgMjrlhbPpl60="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+    </table>
+    <table name="coco" schema="" catalog="dili_user" type="VIEW">
+      <column name="CONCAT(mobile_phone,&apos;+&apos;,email)" sqlType="VARCHAR" precision="66" scale="0" nullable="true" jdbcType="12"/>
+    </table>
+    <table name="t_buy_quote" schema="" catalog="dili_user" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="product_id" sqlType="VARCHAR" precision="250" scale="0" nullable="false" jdbcType="12" remarks="5oql5Lu35ZWG5ZOBSUQ="/>
+      <column name="product_name" sqlType="VARCHAR" precision="250" scale="0" nullable="false" jdbcType="12" remarks="5ZWG5ZOB5ZCN56ew"/>
+      <column name="purchase_count" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="6YeH6LSt5pWw6YeP"/>
+      <column name="purchase_unit" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" remarks="5Y2V5L2N"/>
+      <column name="price" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5oql5Lu3"/>
+      <column name="contacts" sqlType="VARCHAR" precision="120" scale="0" nullable="false" jdbcType="12" remarks="6IGU57O75Lq6"/>
+      <column name="phone" sqlType="VARCHAR" precision="120" scale="0" nullable="false" jdbcType="12" remarks="6IGU57O755S16K+d"/>
+      <column name="quote_remark" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12" remarks="cXVvdGVSZW1hcms="/>
+      <column name="buyer_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="6YeH6LSt5ZWGSUQ="/>
+      <column name="supplier_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="5L6b5bqU5ZWGSUQ="/>
+      <column name="buyer" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12" remarks="6YeH6LSt5ZWG5ZCN56ew"/>
+      <column name="supplier" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12" remarks="5L6b5bqU5ZWG5ZCN56ew"/>
+      <column name="quotation_type" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" remarks="5oql5Lu357G75Z6LIDHvvJrkvpvlupTllYbmiqXku7fvvIwy77ya5Zyw5Yip5oql5Lu3"/>
+      <column name="view_state" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="5p+l55yL54q25oCBIDHvvJrmnKrmn6XnnIvvvIwy77ya5bey5p+l55yL"/>
+      <column name="operation_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZA=="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWQ=" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_customer_pickup_address" schema="" catalog="dili_user" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="aWQ=" autoIncrement="true"/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5bqX6ZO6SUTlupfpk7pJRA=="/>
+      <column name="address" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" remarks="5Zyw5Z2A"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="eW4xOiAg5pyJ5pWILCAyOuaXoOaViA=="/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZA=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_enterprise_info" schema="" catalog="dili_user" type="TABLE">
+      <column name="enterprise_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="ZW50ZXJwcmlzZV9pZGVudGVycHJpc2VfaWQ=" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZHVzZXJfaWQ="/>
+      <column name="full_name" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12" remarks="5YWs5Y+45YWo56ew5YWs5Y+45YWo56ew"/>
+      <column name="company_nature" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="5YWs5Y+45oCn6LSoMTrkvIHkuJrljZXkvY0sMjrkuovkuJrljZXkvY3miJbnpL7kvJrlm6LkvZMsMzrkuKrkvZPnu4/okKUsNDog5Liq5Lq6"/>
+      <column name="dept" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12" remarks="5omA5Zyo6YOo6Zeo5omA5Zyo6YOo6Zeo"/>
+      <column name="position" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12" remarks="6IGM5L2N6IGM5L2N"/>
+      <column name="registered_no" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5bel5ZWG5rOo5YaM5Y+35bel5ZWG5rOo5YaM5Y+3"/>
+      <column name="img_idcard_front" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12" remarks="6Lqr5Lu96K+B5q2j6Z2i5a2Y5pS+6Lev5b6E"/>
+      <column name="img_idcard_background" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12" remarks="6Lqr5Lu96K+B5Y+N6Z2i5a2Y5pS+6Lev5b6E"/>
+      <column name="img_buss_license" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12" remarks="5omn54Wn5omr5o+P5Lu25omn54Wn5omr5o+P5Lu2"/>
+      <column name="enterprise_auth_state" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="5LyB5Lia6K6k6K+B54q25oCBMTrmnKrkvIHkuJrorqTor4EsMjrlt7LkvIHkuJrorqTor4HvvIwz77ya5a6h5qC45Lit77yMNO+8muWuoeaguOWksei0pe+8jDXvvJrlpLHmlYg="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ==" remarks="MTogIOacieaViCwgMjrml6DmlYg="/>
+      <primary-key name="PRIMARY" columns="enterprise_id"/>
+    </table>
+    <table name="t_joint_login" schema="" catalog="dili_user" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="uid" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" def="MA==" remarks="dXNlcuihqGlk"/>
+      <column name="token" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="56ys5LiJ5pa56Ym05p2DdG9rZW4="/>
+      <column name="type" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA==" remarks="MTrlvq7kv6E7MjpRUTsz5b6u5Y2a"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZA=="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWQ=" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="ix_join_login" unique="false" columns="uid"/>
+    </table>
+    <table name="t_order_remind_log" schema="" catalog="dili_user" type="TABLE">
+      <column name="remind_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZOaPkOmGkuaTjeS9nOiAhQ=="/>
+      <column name="order_status" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="b3JkZXJfc3RhdHVz6K6i5Y2V54q25oCB"/>
+      <column name="order_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="b3JkZXJfaWQ="/>
+      <column name="remind_shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="cmVtaW5kX3Nob3BfaWTmj5DphpLlupfpk7pJRA=="/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="eW4xOiAg5pyJ5pWILCAyOuaXoOaViA=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <primary-key name="PRIMARY" columns="remind_id"/>
+      <index name="index_uid_status_orderid_shopid_yn" unique="false" columns="user_id,order_status,order_id,remind_shop_id,yn"/>
+    </table>
+    <table name="t_picking_info" schema="" catalog="dili_user" type="TABLE">
+      <column name="packing_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="cGFja2luZ19pZHBhY2tpbmdfaWQ=" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZHVzZXJfaWQ="/>
+      <column name="user_name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5o+Q6LSn5Lq65o+Q6LSn5Lq6"/>
+      <column name="mobile_phone" sqlType="VARCHAR" precision="15" scale="0" nullable="true" jdbcType="12" remarks="5omL5py65Y+356CB5omL5py65Y+356CB"/>
+      <column name="def" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ==" remarks="5piv5ZCm5Li66buY6K6k5piv5ZCm5Li66buY6K6k5o+Q6LSn5Lq6DQogICAgICAgICAgICAxOiDpnZ7pu5jorqQNCiAgICAgICAgICAgIDLvvJrpu5jorqQ="/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="eW4xOiAg5pyJ5pWILCAyOuaXoOaViA=="/>
+      <column name="id_card" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <column name="addrId" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" def="MA==" remarks="5Zyw5Z2A57yW56CB"/>
+      <column name="address" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5Yy65Y6/5Zyw5Z2A"/>
+      <column name="address_detail" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5Yy65Y6/5Yqg5LiK6K+m57uG5Zyw5Z2A"/>
+      <primary-key name="PRIMARY" columns="packing_id"/>
+      <index name="index_uid_yn" unique="false" columns="user_id,yn"/>
+    </table>
+    <table name="t_quotation_inquiry" schema="" catalog="dili_user" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="product_id" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12" remarks="5ZWG5ZOBSUQ="/>
+      <column name="pickup_code" sqlType="VARCHAR" precision="120" scale="0" nullable="true" jdbcType="12" remarks="5o+Q6LSn54K5Y29kZQ=="/>
+      <column name="purchase_count" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="6YeH6LSt5pWw6YeP"/>
+      <column name="purchase_unit" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="6YeH6LSt5pWw6YeP5ZCO55qE5Y2V5L2N"/>
+      <column name="purchase_remark" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12" remarks="6YeH6LSt6K+05piO"/>
+      <column name="price" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="contacts" sqlType="VARCHAR" precision="120" scale="0" nullable="true" jdbcType="12" remarks="6IGU57O75Lq6"/>
+      <column name="phone" sqlType="VARCHAR" precision="120" scale="0" nullable="true" jdbcType="12" remarks="6IGU57O755S16K+d"/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5bqX6ZO6SUQ="/>
+      <column name="supplier_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="5L6b5bqU5ZWGSUQ="/>
+      <column name="buyer_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="6YeH6LSt5ZWGKOadpea6kOeUqOaIt+ihqHVzZXJfaWQp"/>
+      <column name="supplier" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12" remarks="5L6b5bqU5ZWG5ZCN56ewKOadpea6kOW6l+mTuuWQjeensCk="/>
+      <column name="buyer" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12" remarks="6YeH6LSt5ZWG5ZCN56ew77yI5p2l5rqQ55So5oi36KGodXNlcl9uYW1lKQ=="/>
+      <column name="state" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="IDDmnKrmiqXku7c7MS4g5bey5oql5Lu3OyAgMui/h+acn++8mzMg5peg6LSnKOW3suaKpeS7tyk="/>
+      <column name="description" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12"/>
+      <column name="product_type" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" remarks="Me+8muesrOS4ieaWueWVhuWTge+8jDLvvJrlnLDliKnkvpvlupTllYblk4EgMzrnrKzkuInmlrnkvpvlupTllYblk4E="/>
+      <column name="type" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="MSDkvpvlupTllYbmiqXku7fvvIwyIOWcsOWIqeaKpeS7tw=="/>
+      <column name="product_name" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12" remarks="5ZWG5ZOB5ZCN56ew"/>
+      <column name="view_state" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" remarks="Me+8muacquafpeecizLvvJrlt7Lmn6XnnIs="/>
+      <column name="operation_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_shopping_cart" schema="" catalog="dili_user" type="TABLE">
+      <column name="cart_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="Y2FydF9pZGNhcnRfaWQ=" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZHVzZXJfaWQ="/>
+      <column name="cart_state" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="54q25oCBMTrlt7LotK3kubAsIDI65pyq6LSt5Lmw"/>
+      <column name="sku" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="c2t1c2t1"/>
+      <column name="product_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5ZWG5ZOBSUTllYblk4FJRA=="/>
+      <column name="product_name" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12" remarks="5ZWG5ZOB5ZCN56ew5ZWG5ZOB5ZCN56ew"/>
+      <column name="delivery_place_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="ZGVsaXZlcnlfcGxhY2VfaWRkZWxpdmVyeV9wbGFjZV9pZA=="/>
+      <column name="delivery_place" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12" remarks="5Lqk5Ymy5Zyw5Lqk5Ymy5Zyw"/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5bqX6ZO6SUQ="/>
+      <column name="shop_name" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12" remarks="5bqX6ZO65ZCN5a2X"/>
+      <column name="group_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5YiG57uESUTnlKjkuo7moIfor4Ys6LSt54mp6L2m5Lit55qE5ZWG5ZOB5piv5ZCm5Y+v5Lul5LiA6LW35LiL5Y2V"/>
+      <column name="price" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5Lu35qC85Lul5YiG5Li65Y2V5L2N55qE5pWw5a2X"/>
+      <column name="price_range" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12"/>
+      <column name="quantity" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5pWw6YeP5pWw6YeP"/>
+      <column name="service" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <primary-key name="PRIMARY" columns="cart_id"/>
+      <index name="index_pid" unique="false" columns="product_id"/>
+      <index name="index_shop" unique="false" columns="shop_id,cart_state"/>
+      <index name="index_sku" unique="false" columns="sku"/>
+      <index name="index_userid_state_created" unique="false" columns="user_id,cart_state,created"/>
+    </table>
+    <table name="t_shortcut_remark" schema="" catalog="dili_user" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="aWQ=" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZHVzZXJfaWQ="/>
+      <column name="shortcut_name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" remarks="5o+P6L+w5ZCN"/>
+      <column name="remark_content" sqlType="VARCHAR" precision="120" scale="0" nullable="true" jdbcType="12" remarks="5o+P6L+w5YaF5a65"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="eW4xOiAg5pyJ5pWILCAyOuaXoOaViA=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_system_config" schema="" catalog="dili_user" type="TABLE">
+      <column name="config_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="Y29uZmlnX2lk" autoIncrement="true"/>
+      <column name="config_name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="6YWN572u5ZCN"/>
+      <column name="config_code" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="6YWN572u56CB"/>
+      <column name="value" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="5aSa5Liq6YeH55SoIiwi6ZqU5byA"/>
+      <column name="show_style" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="MTrljZXpgIksIDLlpI3pgIksMzrkuIvmi4nliJfooag="/>
+      <column name="options" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1" remarks="5a2Y5YKoanNvbuS4siwg5qC85byP5aaC5LiLOiBbe3ZhbHVlO3h4eCxsYWJlbDp4eHh9LHt2YWx1ZTt4eHgsbGFiZWw6eHh4fSwuLi4uLl0="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="Y3JlYXRlZA=="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="bW9kaWZpZWQ="/>
+      <primary-key name="PRIMARY" columns="config_id"/>
+    </table>
+    <table name="t_user_credit" schema="" catalog="dili_user" type="TABLE">
+      <column name="credit_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="Y3JlZGl0X2lk" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZHVzZXJfaWQ="/>
+      <column name="limit_value" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5oC76aKd5bqm"/>
+      <column name="residue" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5Ymp5L2Z6aKd5bqm"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="eW4xOiAg5pyJ5pWILCAyOuaXoOaViA=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <primary-key name="PRIMARY" columns="credit_id"/>
+    </table>
+    <table name="t_user_credit_log" schema="" catalog="dili_user" type="TABLE">
+      <column name="credit_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="Y3JlZGl0X2lk"/>
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="aWQ=" autoIncrement="true"/>
+      <column name="old_limit_value" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5Y6f5L+h55So6aKd5bqm"/>
+      <column name="new_limit_value" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5paw5L+h55So6aKd5bqm55So5oi35oC75L+h55So6aKd5bqm"/>
+      <column name="remark" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12" remarks="cmVtYXJr5pON5L2c6K+05piO"/>
+      <column name="operator" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="b3BlcmF0b3Lmk43kvZzogIU="/>
+      <column name="operator_name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="b3BlcmF0b3JfbmFtZeaTjeS9nOiAheWQjeWtlw=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_user_extension" schema="" catalog="dili_user" type="TABLE">
+      <column name="user_extension_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="5omp5bGV5L+h5oGvSUTmianlsZXkv6Hmga9JRA==" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZHVzZXJfaWQ="/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="shop_state" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MA=="/>
+      <column name="business_type" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="57uP6JCl57G75Z6LMTrph4fotK0sIDI66ZSA5ZSuLCAzOuS4pOiAhemDveaciQ=="/>
+      <column name="address" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" remarks="6K+m57uG5Zyw5Z2A6K+m57uG5Zyw5Z2A"/>
+      <column name="idcard_name" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="6Lqr5Lu96K+B5aeT5ZCN"/>
+      <column name="idcard" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="6Lqr5Lu96K+B5Y+356CB6Lqr5Lu96K+B5Y+356CB"/>
+      <column name="img_idcard_front" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12" remarks="6Lqr5Lu96K+B5q2j6Z2i5a2Y5pS+6Lev5b6E"/>
+      <column name="img_idcard_background" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12" remarks="6Lqr5Lu96K+B5Y+N6Z2i5a2Y5pS+6Lev5b6E"/>
+      <column name="img_front" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12" remarks="6K+B5Lu25q2j6Z2i54Wn"/>
+      <column name="trade" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="6KGM5Lia6KGM5Lia"/>
+      <column name="procurement_scale" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="6YeH6LSt6KeE5qihMe+8mjMw5LiH5Lul5LiLL+W5tOOAgTLvvJozMC01MOS4hy/lubTjgIEz77yaNTAtMTAw5LiHL+W5tOOAgTTvvJoxMDAtNTAw5LiHL+W5tOOAgTXvvJo1MDAtMTAwMOS4hy/lubTjgIE277yaMTAwMOS4hy/lubTku6XkuIo="/>
+      <column name="sales_scale" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="6ZSA5ZSu6KeE5qihMe+8mjMw5LiH5Lul5LiLL+W5tOOAgTLvvJozMC01MOS4hy/lubTjgIEz77yaNTAtMTAw5LiHL+W5tOOAgTTvvJoxMDAtNTAw5LiHL+W5tOOAgTXvvJo1MDAtMTAwMOS4hy/lubTjgIE277yaMTAwMOS4hy/lubTku6XkuIo="/>
+      <column name="mobile_bind_state" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="Mg==" remarks="5omL5py657uR5a6a54q25oCBMTrlt7Lnu5HlrposMjrmnKrnu5Hlrpo="/>
+      <column name="verify_mailbox" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MQ==" remarks="6YKu566x6aqM6K+B54q25oCB6YKu566x6aqM6K+B77yMJzHvvJrmnKrpqozor4HvvIwy77ya5bey6aqM6K+BJw=="/>
+      <column name="certification_state" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ==" remarks="6K6k6K+B54q25oCBMTog5pyq5a6e5ZCN6K6k6K+BLDI65bey5a6e5ZCN6K6k6K+B77yMM++8muWuoeaguOS4re+8jDTvvJrlrqHmoLjlpLHotKUsNe+8muWkseaViA=="/>
+      <column name="security_level" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="5a6J5YWo57qn5Yir5a6J5YWo57qn5Yir"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ==" remarks="MTogIOacieaViCwgMjrml6DmlYg="/>
+      <primary-key name="PRIMARY" columns="user_extension_id"/>
+      <index name="t_user_ext_user_id" unique="false" columns="user_id"/>
+    </table>
+    <table name="t_user_favorite" schema="" catalog="dili_user" type="TABLE">
+      <column name="favorite_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="ZmFvcml0ZV9pZGZhb3JpdGVfaWQ=" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZHVzZXJfaWQ="/>
+      <column name="favorite_type" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="5pS26JeP57G75Z6LMTrllYblk4HmlLbol48sIDI65bqX6ZO65pS26JeP"/>
+      <column name="favorite_resource" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5pS26JeP6LWE5rqQ5pS26JeP6LWE5rqQDQogICAgICAgICAgICDlupfpk7pJROaIluS6p+WTgUlE"/>
+      <column name="price" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" def="MA=="/>
+      <column name="product_category" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5Lqn5ZOB57G755uu"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="eW4xOiAg5pyJ5pWILCAyOuaXoOaViA=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <primary-key name="PRIMARY" columns="favorite_id"/>
+      <index name="index_uid_type_cid_yn" unique="false" columns="user_id,favorite_type,product_category,yn"/>
+    </table>
+    <table name="t_user_info" schema="" catalog="dili_user" type="TABLE">
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="dXNlcl9pZA==" autoIncrement="true"/>
+      <column name="face" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12" remarks="5aS05YOP5aS05YOP"/>
+      <column name="real_name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="55yf5a6e5aeT5ZCN"/>
+      <column name="account_name" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="6LSm5oi35ZCN"/>
+      <column name="account_pwd" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12" remarks="5a+G56CB"/>
+      <column name="sex" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="5oCn5YirMTrnlLcsIDI65aWzLCAzOuS/neWvhg=="/>
+      <column name="mobile_phone" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12" remarks="5omL5py65Y+356CB"/>
+      <column name="email" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="6YKu566x5Zyw5Z2A"/>
+      <column name="account_state" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" remarks="6LSm5oi354q25oCBMTrmraPluLjnirbmgIHvvIwyOumUgeWumiwgMzog5pyq5r+A5rS7"/>
+      <column name="user_type" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" remarks="55So5oi357G75Z6LMTrkuKrkurrnlKjmiLcsIDI65LyB5Lia55So5oi3"/>
+      <column name="reg_source" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="55So5oi35p2l5rqQMTrmnKznq5nms6jlhowgMjpwbGMgIDM65Zyw5Yip5a6dICA0OuaUr+S7mOWNoSA1OueJqea1gSA277ya5om56YeP5rOo5YaM"/>
+      <column name="last_login_time" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="bGFzdF9sb2dpbl90aW1l"/>
+      <column name="last_login_ip" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="bGFzdF9sb2dpbl9pcA=="/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="MTogIOacieaViCwgMjrml6DmlYg="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZA=="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWQ=" version="true"/>
+      <column name="contact_telephone" sqlType="VARCHAR" precision="80" scale="0" nullable="true" jdbcType="12" remarks="6IGU57O755S16K+d"/>
+      <column name="last_pwd_modified" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="5a+G56CB5pyA5ZCO5L+u5pS55pe26Ze0"/>
+      <column name="auth_state" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="MTog5pyq6K6k6K+BLDI65bey6K6k6K+B77yMM++8muWuoeaguOS4re+8jDTvvJrlrqHmoLjlpLHotKUsNe+8muWkseaViA=="/>
+      <column name="customer_type" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="5a6i5oi357G75Z6L"/>
+      <column name="pay_account_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="source_sign" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="56ys5LiJ5pa555m75b2V5qCH6K+G"/>
+      <primary-key name="PRIMARY" columns="user_id"/>
+      <index name="Index_2" unique="true" columns="account_name"/>
+      <index name="Index_3" unique="true" columns="mobile_phone"/>
+      <index name="Index_4" unique="false" columns="email"/>
+    </table>
+    <table name="t_user_lock_log" schema="" catalog="dili_user" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="aWQ=" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZHVzZXJfaWQ="/>
+      <column name="begin_lock_time" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="5byA5aeL6ZSB5a6a5pe26Ze05byA5aeL6ZSB5a6a5pe26Ze0"/>
+      <column name="eng_lock_time" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="6Kej6ZSB5pe26Ze06Kej6ZSB5pe26Ze0"/>
+      <column name="is_unlock" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ==" remarks="5piv5ZCm5bey6Kej6ZSBMe+8mumUgeWumu+8jCAy77ya6Kej6ZSB"/>
+      <column name="remark" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12" remarks="cmVtYXJr5pON5L2c6K+05piO"/>
+      <column name="operator" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="b3BlcmF0b3Lmk43kvZzogIU="/>
+      <column name="operator_name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="b3BlcmF0b3JfbmFtZeaTjeS9nOiAheWQjeWtlw=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="index_uid" unique="false" columns="user_id"/>
+    </table>
+  </data-source>
+  <data-source name="MySQL - dili_user@10.28.6.156" uuid="66bd1b46-f229-439a-aa1d-f367db35a530">
+    <database-info product="MySQL" version="5.5.5-10.0.11-MariaDB-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.36 ( Revision: 4fc1f969f740409a4e03750316df2c0e429f3dc8 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <schema name="" catalog="mysql"/>
+    <table name="column_stats" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="db_name" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12"/>
+      <column name="table_name" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12"/>
+      <column name="column_name" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12"/>
+      <column name="min_value" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="max_value" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="nulls_ratio" sqlType="DECIMAL" precision="12" scale="4" nullable="true" jdbcType="3"/>
+      <column name="avg_length" sqlType="DECIMAL" precision="12" scale="4" nullable="true" jdbcType="3"/>
+      <column name="avg_frequency" sqlType="DECIMAL" precision="12" scale="4" nullable="true" jdbcType="3"/>
+      <column name="hist_size" sqlType="TINYINT UNSIGNED" precision="3" scale="0" nullable="true" jdbcType="-6"/>
+      <column name="hist_type" sqlType="ENUM" precision="15" scale="0" nullable="true" jdbcType="1"/>
+      <column name="histogram" sqlType="VARBINARY" precision="255" scale="0" nullable="true" jdbcType="-3"/>
+      <primary-key name="PRIMARY" columns="db_name,table_name,column_name"/>
+    </table>
+    <table name="columns_priv" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="Host" sqlType="CHAR" precision="60" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Db" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="User" sqlType="CHAR" precision="80" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Table_name" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Column_name" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Timestamp" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <column name="Column_priv" sqlType="SET" precision="31" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="Host,Db,User,Table_name,Column_name"/>
+    </table>
+    <table name="db" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="Host" sqlType="CHAR" precision="60" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Db" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="User" sqlType="CHAR" precision="80" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Select_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Insert_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Update_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Delete_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Create_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Drop_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Grant_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="References_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Index_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Alter_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Create_tmp_table_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Lock_tables_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Create_view_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Show_view_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Create_routine_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Alter_routine_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Execute_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Event_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Trigger_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <primary-key name="PRIMARY" columns="Host,Db,User"/>
+      <index name="User" unique="false" columns="User"/>
+    </table>
+    <table name="event" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="db" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="name" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="body" sqlType="LONGBLOB" precision="2147483647" scale="0" nullable="false" jdbcType="-4"/>
+      <column name="definer" sqlType="CHAR" precision="141" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="execute_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="interval_value" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="interval_field" sqlType="ENUM" precision="18" scale="0" nullable="true" jdbcType="1"/>
+      <column name="created" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <column name="modified" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="last_executed" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="starts" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="ends" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="status" sqlType="ENUM" precision="18" scale="0" nullable="false" jdbcType="1" def="J0VOQUJMRUQn"/>
+      <column name="on_completion" sqlType="ENUM" precision="8" scale="0" nullable="false" jdbcType="1" def="J0RST1An"/>
+      <column name="sql_mode" sqlType="SET" precision="494" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="comment" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="originator" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="time_zone" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="J1NZU1RFTSc="/>
+      <column name="character_set_client" sqlType="CHAR" precision="32" scale="0" nullable="true" jdbcType="1"/>
+      <column name="collation_connection" sqlType="CHAR" precision="32" scale="0" nullable="true" jdbcType="1"/>
+      <column name="db_collation" sqlType="CHAR" precision="32" scale="0" nullable="true" jdbcType="1"/>
+      <column name="body_utf8" sqlType="LONGBLOB" precision="2147483647" scale="0" nullable="true" jdbcType="-4"/>
+      <primary-key name="PRIMARY" columns="db,name"/>
+    </table>
+    <table name="func" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="name" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="ret" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <column name="dl" sqlType="CHAR" precision="128" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="type" sqlType="ENUM" precision="9" scale="0" nullable="false" jdbcType="1"/>
+      <primary-key name="PRIMARY" columns="name"/>
+    </table>
+    <table name="general_log" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="event_time" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVAoNik=" version="true"/>
+      <column name="user_host" sqlType="MEDIUMTEXT" precision="16777215" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="thread_id" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="server_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="command_type" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12"/>
+      <column name="argument" sqlType="MEDIUMTEXT" precision="16777215" scale="0" nullable="false" jdbcType="-1"/>
+    </table>
+    <table name="gtid_slave_pos" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="domain_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="sub_id" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="server_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="seq_no" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="domain_id,sub_id"/>
+    </table>
+    <table name="help_category" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="help_category_id" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="false" jdbcType="5"/>
+      <column name="name" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1"/>
+      <column name="parent_category_id" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="true" jdbcType="5"/>
+      <column name="url" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <primary-key name="PRIMARY" columns="help_category_id"/>
+      <index name="name" unique="true" columns="name"/>
+    </table>
+    <table name="help_keyword" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="help_keyword_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="name" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1"/>
+      <primary-key name="PRIMARY" columns="help_keyword_id"/>
+      <index name="name" unique="true" columns="name"/>
+    </table>
+    <table name="help_relation" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="help_topic_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="help_keyword_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="help_keyword_id,help_topic_id"/>
+    </table>
+    <table name="help_topic" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="help_topic_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="name" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1"/>
+      <column name="help_category_id" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="false" jdbcType="5"/>
+      <column name="description" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="example" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="url" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <primary-key name="PRIMARY" columns="help_topic_id"/>
+      <index name="name" unique="true" columns="name"/>
+    </table>
+    <table name="host" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="Host" sqlType="CHAR" precision="60" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Db" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Select_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Insert_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Update_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Delete_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Create_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Drop_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Grant_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="References_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Index_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Alter_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Create_tmp_table_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Lock_tables_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Create_view_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Show_view_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Create_routine_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Alter_routine_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Execute_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Trigger_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <primary-key name="PRIMARY" columns="Host,Db"/>
+    </table>
+    <table name="index_stats" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="db_name" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12"/>
+      <column name="table_name" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12"/>
+      <column name="index_name" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12"/>
+      <column name="prefix_arity" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="avg_frequency" sqlType="DECIMAL" precision="12" scale="4" nullable="true" jdbcType="3"/>
+      <primary-key name="PRIMARY" columns="db_name,table_name,index_name,prefix_arity"/>
+    </table>
+    <table name="innodb_index_stats" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="database_name" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12"/>
+      <column name="table_name" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12"/>
+      <column name="index_name" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12"/>
+      <column name="last_update" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <column name="stat_name" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12"/>
+      <column name="stat_value" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="sample_size" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="stat_description" sqlType="VARCHAR" precision="1024" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="database_name,table_name,index_name,stat_name"/>
+    </table>
+    <table name="innodb_table_stats" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="database_name" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12"/>
+      <column name="table_name" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12"/>
+      <column name="last_update" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <column name="n_rows" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="clustered_index_size" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="sum_of_other_index_sizes" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="database_name,table_name"/>
+    </table>
+    <table name="plugin" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="name" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="dl" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="name"/>
+    </table>
+    <table name="proc" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="db" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="name" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="type" sqlType="ENUM" precision="9" scale="0" nullable="false" jdbcType="1"/>
+      <column name="specific_name" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="language" sqlType="ENUM" precision="4" scale="0" nullable="false" jdbcType="1" def="J1NRTCc="/>
+      <column name="sql_data_access" sqlType="ENUM" precision="17" scale="0" nullable="false" jdbcType="1" def="J0NPTlRBSU5TX1NRTCc="/>
+      <column name="is_deterministic" sqlType="ENUM" precision="4" scale="0" nullable="false" jdbcType="1" def="J05PJw=="/>
+      <column name="security_type" sqlType="ENUM" precision="8" scale="0" nullable="false" jdbcType="1" def="J0RFRklORVIn"/>
+      <column name="param_list" sqlType="BLOB" precision="65535" scale="0" nullable="false" jdbcType="-4"/>
+      <column name="returns" sqlType="LONGBLOB" precision="2147483647" scale="0" nullable="false" jdbcType="-4"/>
+      <column name="body" sqlType="LONGBLOB" precision="2147483647" scale="0" nullable="false" jdbcType="-4"/>
+      <column name="definer" sqlType="CHAR" precision="141" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="created" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <column name="modified" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="sql_mode" sqlType="SET" precision="494" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="comment" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="character_set_client" sqlType="CHAR" precision="32" scale="0" nullable="true" jdbcType="1"/>
+      <column name="collation_connection" sqlType="CHAR" precision="32" scale="0" nullable="true" jdbcType="1"/>
+      <column name="db_collation" sqlType="CHAR" precision="32" scale="0" nullable="true" jdbcType="1"/>
+      <column name="body_utf8" sqlType="LONGBLOB" precision="2147483647" scale="0" nullable="true" jdbcType="-4"/>
+      <primary-key name="PRIMARY" columns="db,name,type"/>
+    </table>
+    <table name="procs_priv" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="Host" sqlType="CHAR" precision="60" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Db" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="User" sqlType="CHAR" precision="80" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Routine_name" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Routine_type" sqlType="ENUM" precision="9" scale="0" nullable="false" jdbcType="1"/>
+      <column name="Grantor" sqlType="CHAR" precision="141" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Proc_priv" sqlType="SET" precision="27" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Timestamp" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="Host,Db,User,Routine_name,Routine_type"/>
+      <index name="Grantor" unique="false" columns="Grantor"/>
+    </table>
+    <table name="proxies_priv" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="Host" sqlType="CHAR" precision="60" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="User" sqlType="CHAR" precision="80" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Proxied_host" sqlType="CHAR" precision="60" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Proxied_user" sqlType="CHAR" precision="80" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="With_grant" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <column name="Grantor" sqlType="CHAR" precision="141" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Timestamp" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="Host,User,Proxied_host,Proxied_user"/>
+      <index name="Grantor" unique="false" columns="Grantor"/>
+    </table>
+    <table name="roles_mapping" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="Host" sqlType="CHAR" precision="60" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="User" sqlType="CHAR" precision="80" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Role" sqlType="CHAR" precision="80" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Admin_option" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <index name="Host" unique="true" columns="Host,User,Role"/>
+    </table>
+    <table name="servers" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="Server_name" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Host" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Db" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Username" sqlType="CHAR" precision="80" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Password" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Port" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Socket" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Wrapper" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Owner" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="Server_name"/>
+    </table>
+    <table name="slow_log" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="start_time" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVAoNik=" version="true"/>
+      <column name="user_host" sqlType="MEDIUMTEXT" precision="16777215" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="query_time" sqlType="TIME" precision="8" scale="0" nullable="false" jdbcType="92"/>
+      <column name="lock_time" sqlType="TIME" precision="8" scale="0" nullable="false" jdbcType="92"/>
+      <column name="rows_sent" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="rows_examined" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="db" sqlType="VARCHAR" precision="512" scale="0" nullable="false" jdbcType="12"/>
+      <column name="last_insert_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="insert_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="server_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="sql_text" sqlType="MEDIUMTEXT" precision="16777215" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="thread_id" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5"/>
+    </table>
+    <table name="table_stats" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="db_name" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12"/>
+      <column name="table_name" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12"/>
+      <column name="cardinality" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="true" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="db_name,table_name"/>
+    </table>
+    <table name="tables_priv" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="Host" sqlType="CHAR" precision="60" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Db" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="User" sqlType="CHAR" precision="80" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Table_name" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Grantor" sqlType="CHAR" precision="141" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Timestamp" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <column name="Table_priv" sqlType="SET" precision="98" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Column_priv" sqlType="SET" precision="31" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="Host,Db,User,Table_name"/>
+      <index name="Grantor" unique="false" columns="Grantor"/>
+    </table>
+    <table name="time_zone" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="Time_zone_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Use_leap_seconds" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <primary-key name="PRIMARY" columns="Time_zone_id"/>
+    </table>
+    <table name="time_zone_leap_second" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="Transition_time" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="Correction" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="Transition_time"/>
+    </table>
+    <table name="time_zone_name" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="Name" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1"/>
+      <column name="Time_zone_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="Name"/>
+    </table>
+    <table name="time_zone_transition" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="Time_zone_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Transition_time" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="Transition_type_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="Time_zone_id,Transition_time"/>
+    </table>
+    <table name="time_zone_transition_type" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="Time_zone_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Transition_type_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Offset" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Is_DST" sqlType="TINYINT UNSIGNED" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <column name="Abbreviation" sqlType="CHAR" precision="8" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="Time_zone_id,Transition_type_id"/>
+    </table>
+    <table name="user" schema="" catalog="mysql" type="SYSTEM TABLE">
+      <column name="Host" sqlType="CHAR" precision="60" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="User" sqlType="CHAR" precision="80" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Password" sqlType="CHAR" precision="41" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Select_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Insert_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Update_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Delete_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Create_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Drop_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Reload_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Shutdown_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Process_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="File_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Grant_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="References_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Index_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Alter_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Show_db_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Super_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Create_tmp_table_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Lock_tables_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Execute_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Repl_slave_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Repl_client_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Create_view_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Show_view_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Create_routine_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Alter_routine_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Create_user_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Event_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Trigger_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="Create_tablespace_priv" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="ssl_type" sqlType="ENUM" precision="9" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="ssl_cipher" sqlType="BLOB" precision="65535" scale="0" nullable="false" jdbcType="-4"/>
+      <column name="x509_issuer" sqlType="BLOB" precision="65535" scale="0" nullable="false" jdbcType="-4"/>
+      <column name="x509_subject" sqlType="BLOB" precision="65535" scale="0" nullable="false" jdbcType="-4"/>
+      <column name="max_questions" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="max_updates" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="max_connections" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="max_user_connections" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="plugin" sqlType="CHAR" precision="64" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="authentication_string" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="password_expired" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="is_role" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <primary-key name="PRIMARY" columns="Host,User"/>
+    </table>
+  </data-source>
+</component>
