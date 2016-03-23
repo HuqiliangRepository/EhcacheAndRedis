@@ -12,9 +12,13 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.dao.DataAccessException;
+import org.springframework.data.redis.connection.RedisConnection;
+import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.orm.hibernate4.HibernateTemplate;
-
+import org.codehaus.jackson.map.ObjectMapper;
 import java.util.List;
 import java.util.ListIterator;
 
@@ -59,7 +63,7 @@ public class RedisTest {
         redisTemplate = (StringRedisTemplate) ac.getBean("redisTemplate");
         HibernateTemplate hibernateTemplate = (HibernateTemplate) ac.getBean("hibernateTemplate");
         list = hibernateTemplate.loadAll(t_user_info.class);
-        final String str = JSON.toJSONString(list);
+/*        final String str = JSON.toJSONString(list);
         System.out.println(str);
         JSONArray jsonArray = JSONArray.parseArray(str);
 
@@ -69,9 +73,9 @@ public class RedisTest {
             System.out.println(li.next().toString());
 
         }
-        System.out.println(jsonArray);
+        System.out.println(jsonArray);*/
 
-/*
+
         for (int i = 0; i < 100; i++) {
 
 
@@ -87,13 +91,22 @@ public class RedisTest {
                 redisConnection.setNX(key,value);
                 byte[] value1 = redisConnection.get(key);
                 String name = serializer.deserialize(value1);
+                try {
+                    ObjectMapper objectMapper=new ObjectMapper();
+                    list=objectMapper.readValue(name,t_user_info.class);
+                }catch (Exception e){
+                        e.printStackTrace();
+                }
+
+
+
 
                 System.out.println(name);
                 return null;
             }
         });
-        }*/
-        System.out.println("测试成功�?");
+        }
+        System.out.println("测试成功�?");
     }
 
 

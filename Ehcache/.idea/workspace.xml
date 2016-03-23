@@ -7,161 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1286812c-c990-4d54-ba90-c3b49855869b" name="Default" comment="redis测试成功，并且循环执行一白次">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/10kz.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/123.au" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/CallSync.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/CollectionAndCollections.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/test/EhcacheTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/JoinTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/Myclass$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/Myclass$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/Myclass.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/until/PageNoUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/test/RedisTest$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/test/RedisTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/Test$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/out/production/main/dw/spring3/rest/test/Test.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/Test.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/dw/spring3/rest/test/Test.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/TestThreadDaemon.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/Test_synAndLock$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/Test_synAndLock$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/Test_synAndLock.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/ThreadDaemon.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/out/production/main/dw/spring3/rest/test/ThreadDemo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/dw/spring3/rest/test/ThreadDemo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/ThreadImp.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/dao/UserDAO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/dao/impl/UserDAOImpl$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/dao/impl/UserDAOImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/service/UserService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/controller/UsersController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/alarm.au" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/callableAndFuture$CallableTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/callableAndFuture.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/interrupt$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/interrupt.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/mutiThread$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/mutiThread$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/mutiThread.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/syncAndLock.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/syncMTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/bean/t_user_info.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/com/huqiliang/test/vector.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/src/com/huqiliang/test/CallSync.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/src/com/huqiliang/test/CollectionAndCollections.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/java/dw/spring3/rest/test/EhcacheTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/src/com/huqiliang/test/JoinTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/target/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/MavenRedis.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__aspectj_aspectjweaver_1_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__com_alibaba_fastjson_1_2_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__commons_pool_commons_pool_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__jstl_jstl_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__junit_junit_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_36.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_4_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__ognl_ognl_3_0_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__org_hibernate_ejb3_persistence_1_0_2_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__org_hibernate_hibernate_commons_annotations_4_2_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__org_hibernate_hibernate_core_4_2_20_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__org_hibernate_hibernate_ehcache_4_2_2_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_5_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__org_springframework_spring_aop_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__org_springframework_spring_aspects_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__org_springframework_spring_beans_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__org_springframework_spring_context_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__org_springframework_spring_context_support_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__org_springframework_spring_jdbc_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__org_springframework_spring_orm_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__org_springframework_spring_web_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__org_springframework_spring_webmvc_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__redis_clients_jedis_2_7_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/java/dw/spring3/rest/test/RedisTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/SpringRedis.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/src/com/huqiliang/test/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/Thread.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/src/com/huqiliang/test/ThreadDaemon.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/java/dw/spring3/rest/test/ThreadTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/src/com/huqiliang/test/ThreadTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/.idea/artifacts/Thread_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../webapp/WEB-INF/jsp/addSucess.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../webapp/WEB-INF/jsp/addUser.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/src/com/huqiliang/test/allableAndFuture.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../webapp/WEB-INF/jsp/allusers.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/resources/applicationContext.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/target/classes/applicationContext.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../webapp/WEB-INF/tags/c.tld" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ehcache.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/resources/ehcache.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/target/classes/ehcache.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../webapp/WEB-INF/jsp/employees.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/resources/hibernate.cfg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/target/classes/hibernate.cfg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/out/artifacts/SpringRedis_war_exploded/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/web/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/web/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../webapp/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/src/com/huqiliang/test/interrupt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/resources/jdbc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/target/classes/jdbc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/resources/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/target/classes/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/main.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/module_main.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../webapp/WEB-INF/jsp/object.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/redis.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/resources/redis.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/target/classes/redis.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/rest-servlet.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/web/WEB-INF/rest-servlet.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../webapp/WEB-INF/rest-servlet.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/springredis.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/springredis.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/src/com/huqiliang/test/syncAndLock.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/src/com/huqiliang/test/syncMTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/java/dw/spring3/rest/bean/t_user_info.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../webapp/WEB-INF/jsp/users.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/src/com/huqiliang/test/vector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/out/artifacts/SpringRedis_war_exploded/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/web/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/web/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../webapp/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../webapp/WEB-INF/bak/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Thread/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ehcache.iml" afterPath="$PROJECT_DIR$/Ehcache.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dw/spring3/rest/test/RedisTest.java" afterPath="$PROJECT_DIR$/src/main/java/dw/spring3/rest/test/RedisTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/rest-servlet.xml" afterPath="$PROJECT_DIR$/src/main/resources/rest-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ehcache.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -224,8 +73,22 @@
       <file leaf-file-name="RedisTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dw/spring3/rest/test/RedisTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56962025">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.556701">
+              <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2735#3620#0" expanded="true" />
+                <element signature="e#3619#3620#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="187" column="21" selection-start-line="187" selection-start-column="21" selection-end-line="187" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -258,15 +121,15 @@
         <option value="$PROJECT_DIR$/src/main/resources/rest-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/dw/spring3/rest/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/dw/spring3/rest/dao/UserDAO.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/dw/spring3/rest/controller/UsersController.java" />
         <option value="$PROJECT_DIR$/src/main/java/dw/spring3/rest/dao/impl/UserDAOImpl.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/rest-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/dw/spring3/rest/bean/t_user_info.java" />
         <option value="$PROJECT_DIR$/src/main/resources/redis.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/dw/spring3/rest/test/RedisTest.java" />
         <option value="$PROJECT_DIR$/.idea/libraries/Maven__javassist_javassist_3_11_0_GA.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dw/spring3/rest/test/RedisTest.java" />
       </list>
     </option>
   </component>
@@ -365,102 +228,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ehcache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework.data:spring-data-redis:1.5.0.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-data-redis-1.5.0.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="redis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ehcache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework.data:spring-data-redis:1.5.0.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-data-redis-1.5.0.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="redis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="connection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ehcache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework.data:spring-data-redis:1.5.0.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-data-redis-1.5.0.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="redis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="connection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jredis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ehcache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework.data:spring-data-redis:1.5.0.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-data-redis-1.5.0.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1384,7 +1151,7 @@
       <workItem from="1458464128483" duration="1654000" />
       <workItem from="1458560611138" duration="5812000" />
       <workItem from="1458620128982" duration="6950000" />
-      <workItem from="1458717242533" duration="8806000" />
+      <workItem from="1458717242533" duration="10895000" />
     </task>
     <task id="LOCAL-00001" summary="redis测试成功，并且循环执行一白次">
       <created>1458721421475</created>
@@ -1426,7 +1193,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100311000" />
+    <option name="totallyTimeSpent" value="102400000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1439,7 +1206,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1452,16 +1219,16 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31635803" sideWeight="0.50278884" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40604028" sideWeight="0.846318" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46604937" sideWeight="0.5059761" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.055555556" sideWeight="0.5059761" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46604937" sideWeight="0.49402392" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5154321" sideWeight="0.7450199" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3243028" sideWeight="0.5115607" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20398407" sideWeight="0.50653595" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11727079" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33358955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31635803" sideWeight="0.49721116" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3243028" sideWeight="0.4884393" order="4" side_tool="false" content_ui="combo" x="720" y="46" width="480" height="948" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20398407" sideWeight="0.49346405" order="4" side_tool="false" content_ui="combo" x="720" y="46" width="480" height="948" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4521605" sideWeight="0.8374502" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1783,14 +1550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="181" column="26" selection-start-line="181" selection-start-column="26" selection-end-line="181" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1940,11 +1699,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="187" column="21" selection-start-line="187" selection-start-column="21" selection-end-line="187" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dw/spring3/rest/test/RedisTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56962025">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
+        <state vertical-scroll-proportion="0.556701">
+          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2735#3620#0" expanded="true" />
+            <element signature="e#3619#3620#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
