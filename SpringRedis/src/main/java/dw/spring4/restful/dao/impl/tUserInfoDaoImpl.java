@@ -1,6 +1,8 @@
 package dw.spring4.restful.dao.impl;
 
 import dw.spring4.restful.dao.tUserInfoDao;
+import dw.spring4.restful.model.t_user_info;
+import dw.spring4.restful.until.SerializeUtil;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.core.RedisCallback;
@@ -15,7 +17,7 @@ import java.util.List;
 /**
  * Created by root on 3/24/16.
  */
-@Component("UserDAOImpl")
+@Component("tUserInfoDaoImpl")
 public class tUserInfoDaoImpl implements tUserInfoDao {
     private RedisTemplate redisTemplate;
     public RedisTemplate getRedisTemplate() {
@@ -28,29 +30,20 @@ public class tUserInfoDaoImpl implements tUserInfoDao {
     }
 
 
-    public List<String> getAll() {
-        final RedisSerializer<String> serializer = redisTemplate.getStringSerializer();
-        final Long pwdLogSize=redisTemplate.opsForList().size("huqiliang");
-        List<Object> pwdLogList=redisTemplate.executePipelined(new RedisCallback<String>() {
+    public List<t_user_info> getAll() {
+        List<t_user_info> ll= (List<t_user_info>)redisTemplate.execute(new RedisCallback<Object>() {
 
-            public String doInRedis(RedisConnection conn)
-                    throws DataAccessException {
-                for (int i=0 ;i<pwdLogSize ;i++) {
-                    byte[] listName  = serializer.serialize("getpwdList");
-                    conn.rPop(listName);
-                }
-                return null;
+            public Object doInRedis(RedisConnection redisConnection) throws DataAccessException {
+                byte[] value = redisConnection.get("tuilist".getBytes());
+                List<t_user_info> tuilist = (List<t_user_info>) SerializeUtil.unserialize(value);
+                return tuilist;
             }
-        }, serializer);
-        //  去除结果中的null
-        ArrayList<String> newList=new ArrayList<String>();
-        for (Object o : pwdLogList) {
-            if(o!=null)
-                newList.add(String.valueOf(o));
-        }
-        return newList;
 
-
+        });
+        return ll;
 
     }
+
+
+
 }

@@ -2,6 +2,8 @@ package dw.spring4.restful.dao;
 
 
 
+import dw.spring4.restful.model.t_user_info;
+
 import java.util.List;
 
 /**
@@ -9,6 +11,6 @@ import java.util.List;
  */
 public interface tUserInfoDao {
 
-    List<String> getAll();
+    List<t_user_info> getAll();
 
 }

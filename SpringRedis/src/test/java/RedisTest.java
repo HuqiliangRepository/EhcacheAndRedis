@@ -135,45 +135,38 @@ public class RedisTest {
     public void testRedRedis3() {
         ac = new ClassPathXmlApplicationContext("rest-servlet.xml");
         redisTemplate = (StringRedisTemplate) ac.getBean("redisTemplate");
-
-       // final RedisSerializer<String> serializer = redisTemplate.getStringSerializer();
-
-       final t_user_info tui=new t_user_info();
-        tui.setUser_id("1000001");
-        tui.setAccount_name("huqiliang");
-        tui.setAccount_pwd("123456789");
-        tui.setAccount_state("有效");
-        tui.setContact_telephone("13880243090");
-        tui.setCreated(new java.util.Date());
-        tui.setCustomer_type(null);
-        tui.setEmail("huqiliang@diligrp.com");
-        tui.setFace("http://www.baidu.com");
-        tui.setLast_login_ip("192.168.1.56");
-        tui.setLast_login_time(new java.util.Date());
-        tui.setLast_pwd_modified(new java.util.Date());
-        tui.setMobile_phone("13880243090");
-        tui.setModified(new java.util.Date());
-        tui.setYn(null);
-        tui.setUser_type(null);
-        tui.setSource_sign("huqiliang.jpg");
-        tui.setSex(BigInteger.valueOf(1));
-        tui.setReg_source(null);
-        tui.setReal_name("huqiliang");
-        tui.setPay_account_id(null);
-        tui.setAuth_state(null);
-
+        HibernateTemplate hibernateTemplate = (HibernateTemplate) ac.getBean("hibernateTemplate");
+        final List<t_user_info> tuilist = hibernateTemplate.loadAll(t_user_info.class);
         redisTemplate.execute(new RedisCallback<Object>() {
 
             public Object doInRedis(RedisConnection redisConnection) throws DataAccessException {
 
-                redisConnection.setNX("huqiliang".getBytes(), SerializeUtil.serialize(tui));
-
-
-
+                redisConnection.setNX("tuilist".getBytes(), SerializeUtil.serialize(tuilist));
 
                 return null;
             }
         });
+
+    }
+
+
+
+    @Test
+    public void testRedRedis4() {
+        ac = new ClassPathXmlApplicationContext("rest-servlet.xml");
+        redisTemplate = (StringRedisTemplate) ac.getBean("redisTemplate");
+        HibernateTemplate hibernateTemplate = (HibernateTemplate) ac.getBean("hibernateTemplate");
+
+       List<t_user_info> ll=(List<t_user_info>)redisTemplate.execute(new RedisCallback<Object>() {
+
+            public Object doInRedis(RedisConnection redisConnection) throws DataAccessException {
+                byte[] value = redisConnection.get("tuilist".getBytes());
+                List<t_user_info> tuilist = (List<t_user_info>) SerializeUtil.unserialize(value);
+                return tuilist;
+            }
+
+        });
+
 
     }
 
