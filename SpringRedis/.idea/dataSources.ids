@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - dili_user@10.28.6.55" uuid="e9f32efd-4587-4efb-961e-fa8c9ee53af3">
+    <database-info product="MySQL" version="5.5.5-10.0.11-MariaDB-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.36 ( Revision: 4fc1f969f740409a4e03750316df2c0e429f3dc8 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <schema name="" catalog="dili_user"/>
+    <table name="coco" schema="" catalog="dili_user" type="VIEW">
+      <column name="CONCAT(mobile_phone,&apos;+&apos;,email)" sqlType="VARCHAR" precision="66" scale="0" nullable="true" jdbcType="12"/>
+    </table>
+    <table name="t_buy_quote" schema="" catalog="dili_user" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="product_id" sqlType="VARCHAR" precision="250" scale="0" nullable="false" jdbcType="12" remarks="5oql5Lu35ZWG5ZOBSUQ="/>
+      <column name="product_name" sqlType="VARCHAR" precision="250" scale="0" nullable="false" jdbcType="12" remarks="5ZWG5ZOB5ZCN56ew"/>
+      <column name="purchase_count" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="6YeH6LSt5pWw6YeP"/>
+      <column name="purchase_unit" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" remarks="5Y2V5L2N"/>
+      <column name="price" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5oql5Lu3"/>
+      <column name="contacts" sqlType="VARCHAR" precision="120" scale="0" nullable="false" jdbcType="12" remarks="6IGU57O75Lq6"/>
+      <column name="phone" sqlType="VARCHAR" precision="120" scale="0" nullable="false" jdbcType="12" remarks="6IGU57O755S16K+d"/>
+      <column name="quote_remark" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12" remarks="cXVvdGVSZW1hcms="/>
+      <column name="buyer_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="6YeH6LSt5ZWGSUQ="/>
+      <column name="supplier_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="5L6b5bqU5ZWGSUQ="/>
+      <column name="buyer" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12" remarks="6YeH6LSt5ZWG5ZCN56ew"/>
+      <column name="supplier" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12" remarks="5L6b5bqU5ZWG5ZCN56ew"/>
+      <column name="quotation_type" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" remarks="5oql5Lu357G75Z6LIDHvvJrkvpvlupTllYbmiqXku7fvvIwy77ya5Zyw5Yip5oql5Lu3"/>
+      <column name="view_state" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="5p+l55yL54q25oCBIDHvvJrmnKrmn6XnnIvvvIwy77ya5bey5p+l55yL"/>
+      <column name="operation_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZA=="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWQ=" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_customer_pickup_address" schema="" catalog="dili_user" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="aWQ=" autoIncrement="true"/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5bqX6ZO6SUTlupfpk7pJRA=="/>
+      <column name="address" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" remarks="5Zyw5Z2A"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="eW4xOiAg5pyJ5pWILCAyOuaXoOaViA=="/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZA=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_enterprise_info" schema="" catalog="dili_user" type="TABLE">
+      <column name="enterprise_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="ZW50ZXJwcmlzZV9pZGVudGVycHJpc2VfaWQ=" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZHVzZXJfaWQ="/>
+      <column name="full_name" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12" remarks="5YWs5Y+45YWo56ew5YWs5Y+45YWo56ew"/>
+      <column name="company_nature" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="5YWs5Y+45oCn6LSoMTrkvIHkuJrljZXkvY0sMjrkuovkuJrljZXkvY3miJbnpL7kvJrlm6LkvZMsMzrkuKrkvZPnu4/okKUsNDog5Liq5Lq6"/>
+      <column name="dept" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12" remarks="5omA5Zyo6YOo6Zeo5omA5Zyo6YOo6Zeo"/>
+      <column name="position" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12" remarks="6IGM5L2N6IGM5L2N"/>
+      <column name="registered_no" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5bel5ZWG5rOo5YaM5Y+35bel5ZWG5rOo5YaM5Y+3"/>
+      <column name="img_idcard_front" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12" remarks="6Lqr5Lu96K+B5q2j6Z2i5a2Y5pS+6Lev5b6E"/>
+      <column name="img_idcard_background" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12" remarks="6Lqr5Lu96K+B5Y+N6Z2i5a2Y5pS+6Lev5b6E"/>
+      <column name="img_buss_license" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12" remarks="5omn54Wn5omr5o+P5Lu25omn54Wn5omr5o+P5Lu2"/>
+      <column name="enterprise_auth_state" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="5LyB5Lia6K6k6K+B54q25oCBMTrmnKrkvIHkuJrorqTor4EsMjrlt7LkvIHkuJrorqTor4HvvIwz77ya5a6h5qC45Lit77yMNO+8muWuoeaguOWksei0pe+8jDXvvJrlpLHmlYg="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ==" remarks="MTogIOacieaViCwgMjrml6DmlYg="/>
+      <primary-key name="PRIMARY" columns="enterprise_id"/>
+    </table>
+    <table name="t_joint_login" schema="" catalog="dili_user" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="uid" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" def="MA==" remarks="dXNlcuihqGlk"/>
+      <column name="token" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="56ys5LiJ5pa56Ym05p2DdG9rZW4="/>
+      <column name="type" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA==" remarks="MTrlvq7kv6E7MjpRUTsz5b6u5Y2a"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZA=="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWQ=" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="ix_join_login" unique="false" columns="uid"/>
+    </table>
+    <table name="t_order_remind_log" schema="" catalog="dili_user" type="TABLE">
+      <column name="remind_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZOaPkOmGkuaTjeS9nOiAhQ=="/>
+      <column name="order_status" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="b3JkZXJfc3RhdHVz6K6i5Y2V54q25oCB"/>
+      <column name="order_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="b3JkZXJfaWQ="/>
+      <column name="remind_shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="cmVtaW5kX3Nob3BfaWTmj5DphpLlupfpk7pJRA=="/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="eW4xOiAg5pyJ5pWILCAyOuaXoOaViA=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <primary-key name="PRIMARY" columns="remind_id"/>
+      <index name="index_uid_status_orderid_shopid_yn" unique="false" columns="user_id,order_status,order_id,remind_shop_id,yn"/>
+    </table>
+    <table name="t_picking_info" schema="" catalog="dili_user" type="TABLE">
+      <column name="packing_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="cGFja2luZ19pZHBhY2tpbmdfaWQ=" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZHVzZXJfaWQ="/>
+      <column name="user_name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5o+Q6LSn5Lq65o+Q6LSn5Lq6"/>
+      <column name="mobile_phone" sqlType="VARCHAR" precision="15" scale="0" nullable="true" jdbcType="12" remarks="5omL5py65Y+356CB5omL5py65Y+356CB"/>
+      <column name="def" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ==" remarks="5piv5ZCm5Li66buY6K6k5piv5ZCm5Li66buY6K6k5o+Q6LSn5Lq6DQogICAgICAgICAgICAxOiDpnZ7pu5jorqQNCiAgICAgICAgICAgIDLvvJrpu5jorqQ="/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="eW4xOiAg5pyJ5pWILCAyOuaXoOaViA=="/>
+      <column name="id_card" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <column name="addrId" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" def="MA==" remarks="5Zyw5Z2A57yW56CB"/>
+      <column name="address" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5Yy65Y6/5Zyw5Z2A"/>
+      <column name="address_detail" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5Yy65Y6/5Yqg5LiK6K+m57uG5Zyw5Z2A"/>
+      <primary-key name="PRIMARY" columns="packing_id"/>
+      <index name="index_uid_yn" unique="false" columns="user_id,yn"/>
+    </table>
+    <table name="t_quotation_inquiry" schema="" catalog="dili_user" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="product_id" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12" remarks="5ZWG5ZOBSUQ="/>
+      <column name="pickup_code" sqlType="VARCHAR" precision="120" scale="0" nullable="true" jdbcType="12" remarks="5o+Q6LSn54K5Y29kZQ=="/>
+      <column name="purchase_count" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="6YeH6LSt5pWw6YeP"/>
+      <column name="purchase_unit" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="6YeH6LSt5pWw6YeP5ZCO55qE5Y2V5L2N"/>
+      <column name="purchase_remark" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12" remarks="6YeH6LSt6K+05piO"/>
+      <column name="price" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="contacts" sqlType="VARCHAR" precision="120" scale="0" nullable="true" jdbcType="12" remarks="6IGU57O75Lq6"/>
+      <column name="phone" sqlType="VARCHAR" precision="120" scale="0" nullable="true" jdbcType="12" remarks="6IGU57O755S16K+d"/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5bqX6ZO6SUQ="/>
+      <column name="supplier_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="5L6b5bqU5ZWGSUQ="/>
+      <column name="buyer_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="6YeH6LSt5ZWGKOadpea6kOeUqOaIt+ihqHVzZXJfaWQp"/>
+      <column name="supplier" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12" remarks="5L6b5bqU5ZWG5ZCN56ewKOadpea6kOW6l+mTuuWQjeensCk="/>
+      <column name="buyer" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12" remarks="6YeH6LSt5ZWG5ZCN56ew77yI5p2l5rqQ55So5oi36KGodXNlcl9uYW1lKQ=="/>
+      <column name="state" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="IDDmnKrmiqXku7c7MS4g5bey5oql5Lu3OyAgMui/h+acn++8mzMg5peg6LSnKOW3suaKpeS7tyk="/>
+      <column name="description" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12"/>
+      <column name="product_type" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" remarks="Me+8muesrOS4ieaWueWVhuWTge+8jDLvvJrlnLDliKnkvpvlupTllYblk4EgMzrnrKzkuInmlrnkvpvlupTllYblk4E="/>
+      <column name="type" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="MSDkvpvlupTllYbmiqXku7fvvIwyIOWcsOWIqeaKpeS7tw=="/>
+      <column name="product_name" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12" remarks="5ZWG5ZOB5ZCN56ew"/>
+      <column name="view_state" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" remarks="Me+8muacquafpeecizLvvJrlt7Lmn6XnnIs="/>
+      <column name="operation_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_shopping_cart" schema="" catalog="dili_user" type="TABLE">
+      <column name="cart_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="Y2FydF9pZGNhcnRfaWQ=" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZHVzZXJfaWQ="/>
+      <column name="cart_state" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="54q25oCBMTrlt7LotK3kubAsIDI65pyq6LSt5Lmw"/>
+      <column name="sku" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="c2t1c2t1"/>
+      <column name="product_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5ZWG5ZOBSUTllYblk4FJRA=="/>
+      <column name="product_name" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12" remarks="5ZWG5ZOB5ZCN56ew5ZWG5ZOB5ZCN56ew"/>
+      <column name="delivery_place_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="ZGVsaXZlcnlfcGxhY2VfaWRkZWxpdmVyeV9wbGFjZV9pZA=="/>
+      <column name="delivery_place" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12" remarks="5Lqk5Ymy5Zyw5Lqk5Ymy5Zyw"/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5bqX6ZO6SUQ="/>
+      <column name="shop_name" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12" remarks="5bqX6ZO65ZCN5a2X"/>
+      <column name="group_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5YiG57uESUTnlKjkuo7moIfor4Ys6LSt54mp6L2m5Lit55qE5ZWG5ZOB5piv5ZCm5Y+v5Lul5LiA6LW35LiL5Y2V"/>
+      <column name="price" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5Lu35qC85Lul5YiG5Li65Y2V5L2N55qE5pWw5a2X"/>
+      <column name="price_range" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12"/>
+      <column name="quantity" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5pWw6YeP5pWw6YeP"/>
+      <column name="service" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <primary-key name="PRIMARY" columns="cart_id"/>
+      <index name="index_pid" unique="false" columns="product_id"/>
+      <index name="index_shop" unique="false" columns="shop_id,cart_state"/>
+      <index name="index_sku" unique="false" columns="sku"/>
+      <index name="index_userid_state_created" unique="false" columns="user_id,cart_state,created"/>
+    </table>
+    <table name="t_shortcut_remark" schema="" catalog="dili_user" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="aWQ=" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZHVzZXJfaWQ="/>
+      <column name="shortcut_name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" remarks="5o+P6L+w5ZCN"/>
+      <column name="remark_content" sqlType="VARCHAR" precision="120" scale="0" nullable="true" jdbcType="12" remarks="5o+P6L+w5YaF5a65"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="eW4xOiAg5pyJ5pWILCAyOuaXoOaViA=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_system_config" schema="" catalog="dili_user" type="TABLE">
+      <column name="config_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="Y29uZmlnX2lk" autoIncrement="true"/>
+      <column name="config_name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="6YWN572u5ZCN"/>
+      <column name="config_code" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="6YWN572u56CB"/>
+      <column name="value" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="5aSa5Liq6YeH55SoIiwi6ZqU5byA"/>
+      <column name="show_style" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="MTrljZXpgIksIDLlpI3pgIksMzrkuIvmi4nliJfooag="/>
+      <column name="options" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1" remarks="5a2Y5YKoanNvbuS4siwg5qC85byP5aaC5LiLOiBbe3ZhbHVlO3h4eCxsYWJlbDp4eHh9LHt2YWx1ZTt4eHgsbGFiZWw6eHh4fSwuLi4uLl0="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="Y3JlYXRlZA=="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="bW9kaWZpZWQ="/>
+      <primary-key name="PRIMARY" columns="config_id"/>
+    </table>
+    <table name="t_user_credit" schema="" catalog="dili_user" type="TABLE">
+      <column name="credit_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="Y3JlZGl0X2lk" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZHVzZXJfaWQ="/>
+      <column name="limit_value" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5oC76aKd5bqm"/>
+      <column name="residue" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5Ymp5L2Z6aKd5bqm"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="eW4xOiAg5pyJ5pWILCAyOuaXoOaViA=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <primary-key name="PRIMARY" columns="credit_id"/>
+    </table>
+    <table name="t_user_credit_log" schema="" catalog="dili_user" type="TABLE">
+      <column name="credit_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="Y3JlZGl0X2lk"/>
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="aWQ=" autoIncrement="true"/>
+      <column name="old_limit_value" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5Y6f5L+h55So6aKd5bqm"/>
+      <column name="new_limit_value" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5paw5L+h55So6aKd5bqm55So5oi35oC75L+h55So6aKd5bqm"/>
+      <column name="remark" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12" remarks="cmVtYXJr5pON5L2c6K+05piO"/>
+      <column name="operator" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="b3BlcmF0b3Lmk43kvZzogIU="/>
+      <column name="operator_name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="b3BlcmF0b3JfbmFtZeaTjeS9nOiAheWQjeWtlw=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="t_user_extension" schema="" catalog="dili_user" type="TABLE">
+      <column name="user_extension_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="5omp5bGV5L+h5oGvSUTmianlsZXkv6Hmga9JRA==" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZHVzZXJfaWQ="/>
+      <column name="shop_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="shop_state" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MA=="/>
+      <column name="business_type" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="57uP6JCl57G75Z6LMTrph4fotK0sIDI66ZSA5ZSuLCAzOuS4pOiAhemDveaciQ=="/>
+      <column name="address" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" remarks="6K+m57uG5Zyw5Z2A6K+m57uG5Zyw5Z2A"/>
+      <column name="idcard_name" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="6Lqr5Lu96K+B5aeT5ZCN"/>
+      <column name="idcard" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="6Lqr5Lu96K+B5Y+356CB6Lqr5Lu96K+B5Y+356CB"/>
+      <column name="img_idcard_front" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12" remarks="6Lqr5Lu96K+B5q2j6Z2i5a2Y5pS+6Lev5b6E"/>
+      <column name="img_idcard_background" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12" remarks="6Lqr5Lu96K+B5Y+N6Z2i5a2Y5pS+6Lev5b6E"/>
+      <column name="img_front" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12" remarks="6K+B5Lu25q2j6Z2i54Wn"/>
+      <column name="trade" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="6KGM5Lia6KGM5Lia"/>
+      <column name="procurement_scale" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="6YeH6LSt6KeE5qihMe+8mjMw5LiH5Lul5LiLL+W5tOOAgTLvvJozMC01MOS4hy/lubTjgIEz77yaNTAtMTAw5LiHL+W5tOOAgTTvvJoxMDAtNTAw5LiHL+W5tOOAgTXvvJo1MDAtMTAwMOS4hy/lubTjgIE277yaMTAwMOS4hy/lubTku6XkuIo="/>
+      <column name="sales_scale" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="6ZSA5ZSu6KeE5qihMe+8mjMw5LiH5Lul5LiLL+W5tOOAgTLvvJozMC01MOS4hy/lubTjgIEz77yaNTAtMTAw5LiHL+W5tOOAgTTvvJoxMDAtNTAw5LiHL+W5tOOAgTXvvJo1MDAtMTAwMOS4hy/lubTjgIE277yaMTAwMOS4hy/lubTku6XkuIo="/>
+      <column name="mobile_bind_state" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="Mg==" remarks="5omL5py657uR5a6a54q25oCBMTrlt7Lnu5HlrposMjrmnKrnu5Hlrpo="/>
+      <column name="verify_mailbox" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MQ==" remarks="6YKu566x6aqM6K+B54q25oCB6YKu566x6aqM6K+B77yMJzHvvJrmnKrpqozor4HvvIwy77ya5bey6aqM6K+BJw=="/>
+      <column name="certification_state" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ==" remarks="6K6k6K+B54q25oCBMTog5pyq5a6e5ZCN6K6k6K+BLDI65bey5a6e5ZCN6K6k6K+B77yMM++8muWuoeaguOS4re+8jDTvvJrlrqHmoLjlpLHotKUsNe+8muWkseaViA=="/>
+      <column name="security_level" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="5a6J5YWo57qn5Yir5a6J5YWo57qn5Yir"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ==" remarks="MTogIOacieaViCwgMjrml6DmlYg="/>
+      <primary-key name="PRIMARY" columns="user_extension_id"/>
+      <index name="t_user_ext_user_id" unique="false" columns="user_id"/>
+    </table>
+    <table name="t_user_favorite" schema="" catalog="dili_user" type="TABLE">
+      <column name="favorite_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="ZmFvcml0ZV9pZGZhb3JpdGVfaWQ=" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZHVzZXJfaWQ="/>
+      <column name="favorite_type" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="5pS26JeP57G75Z6LMTrllYblk4HmlLbol48sIDI65bqX6ZO65pS26JeP"/>
+      <column name="favorite_resource" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5pS26JeP6LWE5rqQ5pS26JeP6LWE5rqQDQogICAgICAgICAgICDlupfpk7pJROaIluS6p+WTgUlE"/>
+      <column name="price" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" def="MA=="/>
+      <column name="product_category" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="5Lqn5ZOB57G755uu"/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="eW4xOiAg5pyJ5pWILCAyOuaXoOaViA=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWRtb2RpZmllZA==" version="true"/>
+      <primary-key name="PRIMARY" columns="favorite_id"/>
+      <index name="index_uid_type_cid_yn" unique="false" columns="user_id,favorite_type,product_category,yn"/>
+    </table>
+    <table name="t_user_info" schema="" catalog="dili_user" type="TABLE">
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="dXNlcl9pZA==" autoIncrement="true"/>
+      <column name="face" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12" remarks="5aS05YOP5aS05YOP"/>
+      <column name="real_name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="55yf5a6e5aeT5ZCN"/>
+      <column name="account_name" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="6LSm5oi35ZCN"/>
+      <column name="account_pwd" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12" remarks="5a+G56CB"/>
+      <column name="sex" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="5oCn5YirMTrnlLcsIDI65aWzLCAzOuS/neWvhg=="/>
+      <column name="mobile_phone" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12" remarks="5omL5py65Y+356CB"/>
+      <column name="email" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="6YKu566x5Zyw5Z2A"/>
+      <column name="account_state" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" remarks="6LSm5oi354q25oCBMTrmraPluLjnirbmgIHvvIwyOumUgeWumiwgMzog5pyq5r+A5rS7"/>
+      <column name="user_type" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" remarks="55So5oi357G75Z6LMTrkuKrkurrnlKjmiLcsIDI65LyB5Lia55So5oi3"/>
+      <column name="reg_source" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="55So5oi35p2l5rqQMTrmnKznq5nms6jlhowgMjpwbGMgIDM65Zyw5Yip5a6dICA0OuaUr+S7mOWNoSA1OueJqea1gSA277ya5om56YeP5rOo5YaM"/>
+      <column name="last_login_time" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="bGFzdF9sb2dpbl90aW1l"/>
+      <column name="last_login_ip" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="bGFzdF9sb2dpbl9pcA=="/>
+      <column name="yn" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ==" remarks="MTogIOacieaViCwgMjrml6DmlYg="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZA=="/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="bW9kaWZpZWQ=" version="true"/>
+      <column name="contact_telephone" sqlType="VARCHAR" precision="80" scale="0" nullable="true" jdbcType="12" remarks="6IGU57O755S16K+d"/>
+      <column name="last_pwd_modified" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="5a+G56CB5pyA5ZCO5L+u5pS55pe26Ze0"/>
+      <column name="auth_state" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="MTog5pyq6K6k6K+BLDI65bey6K6k6K+B77yMM++8muWuoeaguOS4re+8jDTvvJrlrqHmoLjlpLHotKUsNe+8muWkseaViA=="/>
+      <column name="customer_type" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="5a6i5oi357G75Z6L"/>
+      <column name="pay_account_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="source_sign" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="56ys5LiJ5pa555m75b2V5qCH6K+G"/>
+      <primary-key name="PRIMARY" columns="user_id"/>
+      <index name="Index_2" unique="true" columns="account_name"/>
+      <index name="Index_3" unique="true" columns="mobile_phone"/>
+      <index name="Index_4" unique="false" columns="email"/>
+    </table>
+    <table name="t_user_lock_log" schema="" catalog="dili_user" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="aWQ=" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="dXNlcl9pZHVzZXJfaWQ="/>
+      <column name="begin_lock_time" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="5byA5aeL6ZSB5a6a5pe26Ze05byA5aeL6ZSB5a6a5pe26Ze0"/>
+      <column name="eng_lock_time" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="6Kej6ZSB5pe26Ze06Kej6ZSB5pe26Ze0"/>
+      <column name="is_unlock" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ==" remarks="5piv5ZCm5bey6Kej6ZSBMe+8mumUgeWumu+8jCAy77ya6Kej6ZSB"/>
+      <column name="remark" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12" remarks="cmVtYXJr5pON5L2c6K+05piO"/>
+      <column name="operator" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="b3BlcmF0b3Lmk43kvZzogIU="/>
+      <column name="operator_name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="b3BlcmF0b3JfbmFtZeaTjeS9nOiAheWQjeWtlw=="/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="Y3JlYXRlZGNyZWF0ZWQ="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="index_uid" unique="false" columns="user_id"/>
+    </table>
+  </data-source>
+  <data-source name="MySQL - dili_user @localhost" uuid="0f9c3322-f468-4d49-8f9c-f3441c0ddb2a">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

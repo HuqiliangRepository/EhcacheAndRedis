@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MavenRedis.iml" filepath="$PROJECT_DIR$/MavenRedis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/main/main.iml" filepath="$PROJECT_DIR$/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringRedis.iml" filepath="$PROJECT_DIR$/SpringRedis.iml" />
     </modules>
   </component>
 </project>

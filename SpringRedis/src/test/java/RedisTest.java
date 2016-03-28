@@ -1,0 +1,180 @@
+import dw.spring4.restful.model.t_user_info;
+import dw.spring4.restful.until.SerializeUtil;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistryBuilder;
+import org.hibernate.tool.hbm2ddl.SchemaExport;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.dao.DataAccessException;
+import org.springframework.data.redis.connection.RedisConnection;
+import org.springframework.data.redis.core.RedisCallback;
+import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.serializer.RedisSerializer;
+import org.springframework.orm.hibernate4.HibernateTemplate;
+
+
+import java.math.BigInteger;
+import java.sql.Date;
+import java.util.List;
+
+
+public class RedisTest {
+    private static SessionFactory sf;
+    private StringRedisTemplate redisTemplate;
+    private ApplicationContext ac;
+
+
+    @Before
+    public void setUp() throws Exception {
+
+/*
+        ServiceRegistryBuilder srb = new ServiceRegistryBuilder();
+        sf = new Configuration().configure().buildSessionFactory(srb.buildServiceRegistry());
+*/
+        Configuration cfg = new Configuration().configure();
+        sf = cfg.buildSessionFactory(new ServiceRegistryBuilder().applySettings(cfg.getProperties()).buildServiceRegistry());
+
+    }
+
+    @After
+    public void tearDown() throws Exception {
+
+        sf.close();
+    }
+
+    @Test
+    public void testSchemaExport() {
+       /* new SchemaExport(new AnnotationConfiguration().configure()).create(false, true);*/
+        Configuration cfg = new Configuration().configure();
+        SchemaExport export = new SchemaExport(cfg);
+        export.create(false, true);
+
+    }
+
+
+    @Test
+    public void testRedRedis1() {
+        ac = new ClassPathXmlApplicationContext("rest-servlet.xml");
+        redisTemplate = (StringRedisTemplate) ac.getBean("redisTemplate");
+        HibernateTemplate hibernateTemplate = (HibernateTemplate) ac.getBean("hibernateTemplate");
+        final List<t_user_info> list = hibernateTemplate.loadAll(t_user_info.class);
+/*      final String str = JSON.toJSONString(list);
+        System.out.println(str);
+        JSONArray jsonArray = JSONArray.parseArray(str);
+
+        ListIterator li = jsonArray.listIterator();
+        while (li.hasNext()) {
+
+            System.out.println(li.next().toString());
+
+        }
+        System.out.println(jsonArray);*/
+
+
+        //for (int i = 0; i < 100; i++) {
+
+
+        redisTemplate.execute(new RedisCallback<Object>() {
+
+            public Object doInRedis(RedisConnection redisConnection) throws DataAccessException {
+
+
+                RedisSerializer<String> serializer = redisTemplate.getStringSerializer();
+
+                byte[] key = serializer.serialize("huqiliang");
+                byte[] value =serializer.serialize(list.toString());
+                redisConnection.setNX(key,value);
+              //  redisTemplate.opsForHash().put("t_user_info","huqiliang",list.toString());
+                byte[] value1 = redisConnection.get(key);
+                String name = serializer.deserialize(value1);
+        /*        try {
+                    ObjectMapper objectMapper=new ObjectMapper();
+
+
+                    TuiList tuilist=objectMapper.readValue(name, TuiList.class);
+                    list=tuilist.getTuilist();
+                }catch (Exception e){
+                        e.printStackTrace();
+                }*/
+
+                System.out.println(name);
+                return null;
+            }
+        });
+       // }
+        System.out.println("测试成功");
+    }
+
+    @Test
+    public void testRedRedis2() {
+        ac = new ClassPathXmlApplicationContext("rest-servlet.xml");
+        redisTemplate = (StringRedisTemplate) ac.getBean("redisTemplate");
+
+        final RedisSerializer<String> serializer = redisTemplate.getStringSerializer();
+        byte[] key = serializer.serialize("huqiliang");
+        final Long pwdLogSize=redisTemplate.opsForValue().size("huqiliang");
+        List<Object> pwdLogList=redisTemplate.executePipelined(new RedisCallback<String>() {
+
+            public String doInRedis(RedisConnection conn)
+                    throws DataAccessException {
+                for (int i=0 ;i<pwdLogSize ;i++) {
+                    byte[] listName  = serializer.serialize("huqiliang");
+                    conn.rPop(listName);
+                }
+                return null;
+            }
+        }, serializer);
+
+    }
+
+    @Test
+    public void testRedRedis3() {
+        ac = new ClassPathXmlApplicationContext("rest-servlet.xml");
+        redisTemplate = (StringRedisTemplate) ac.getBean("redisTemplate");
+
+       // final RedisSerializer<String> serializer = redisTemplate.getStringSerializer();
+
+       final t_user_info tui=new t_user_info();
+        tui.setUser_id("1000001");
+        tui.setAccount_name("huqiliang");
+        tui.setAccount_pwd("123456789");
+        tui.setAccount_state("有效");
+        tui.setContact_telephone("13880243090");
+        tui.setCreated(new java.util.Date());
+        tui.setCustomer_type(null);
+        tui.setEmail("huqiliang@diligrp.com");
+        tui.setFace("http://www.baidu.com");
+        tui.setLast_login_ip("192.168.1.56");
+        tui.setLast_login_time(new java.util.Date());
+        tui.setLast_pwd_modified(new java.util.Date());
+        tui.setMobile_phone("13880243090");
+        tui.setModified(new java.util.Date());
+        tui.setYn(null);
+        tui.setUser_type(null);
+        tui.setSource_sign("huqiliang.jpg");
+        tui.setSex(BigInteger.valueOf(1));
+        tui.setReg_source(null);
+        tui.setReal_name("huqiliang");
+        tui.setPay_account_id(null);
+        tui.setAuth_state(null);
+
+        redisTemplate.execute(new RedisCallback<Object>() {
+
+            public Object doInRedis(RedisConnection redisConnection) throws DataAccessException {
+
+                redisConnection.setNX("huqiliang".getBytes(), SerializeUtil.serialize(tui));
+
+
+
+
+                return null;
+            }
+        });
+
+    }
+
+}
