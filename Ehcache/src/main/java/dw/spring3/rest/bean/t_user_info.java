@@ -23,6 +23,7 @@ import java.util.Date;
 @Table(name="t_user_info")这里只针对此表进行查询不作新增、删除、修改操作因此将表主键产生器注销掉 */
 public class t_user_info implements Serializable {
 
+
     private BigInteger user_id;
     private String face;
     private String real_name;
@@ -45,6 +46,7 @@ public class t_user_info implements Serializable {
     private BigInteger customer_type;
     private BigInteger pay_account_id;
     private String source_sign;
+
 
     @Id
     @GeneratedValue
@@ -223,4 +225,7 @@ public class t_user_info implements Serializable {
     public void setSource_sign(String source_sign) {
         this.source_sign = source_sign;
     }
+
+
+
 }

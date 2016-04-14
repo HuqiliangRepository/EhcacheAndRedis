@@ -79,12 +79,12 @@
 
     <bean id="SessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-        <property name="packagesToScan"><!--这里是配置XML的自动扫描数据库实体bean-->
+        <!--这里是配置XML的自动扫描数据库实体bean-->
+        <property name="packagesToScan">
             <list>
                 <value>dw.spring3.rest.bean</value>
             </list>
         </property>
-
         <property name="hibernateProperties">
             <props>
                 <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>

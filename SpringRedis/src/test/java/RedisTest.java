@@ -38,6 +38,7 @@ public class RedisTest {
         Configuration cfg = new Configuration().configure();
         sf = cfg.buildSessionFactory(new ServiceRegistryBuilder().applySettings(cfg.getProperties()).buildServiceRegistry());
 
+
     }
 
     @After
@@ -62,27 +63,9 @@ public class RedisTest {
         redisTemplate = (StringRedisTemplate) ac.getBean("redisTemplate");
         HibernateTemplate hibernateTemplate = (HibernateTemplate) ac.getBean("hibernateTemplate");
         final List<t_user_info> list = hibernateTemplate.loadAll(t_user_info.class);
-/*      final String str = JSON.toJSONString(list);
-        System.out.println(str);
-        JSONArray jsonArray = JSONArray.parseArray(str);
-
-        ListIterator li = jsonArray.listIterator();
-        while (li.hasNext()) {
-
-            System.out.println(li.next().toString());
-
-        }
-        System.out.println(jsonArray);*/
-
-
-        //for (int i = 0; i < 100; i++) {
-
-
         redisTemplate.execute(new RedisCallback<Object>() {
 
             public Object doInRedis(RedisConnection redisConnection) throws DataAccessException {
-
-
                 RedisSerializer<String> serializer = redisTemplate.getStringSerializer();
 
                 byte[] key = serializer.serialize("huqiliang");
@@ -132,20 +115,39 @@ public class RedisTest {
     }
 
     @Test
-    public void testRedRedis3() {
+    public  void testRedRedis3() {
         ac = new ClassPathXmlApplicationContext("rest-servlet.xml");
         redisTemplate = (StringRedisTemplate) ac.getBean("redisTemplate");
-        HibernateTemplate hibernateTemplate = (HibernateTemplate) ac.getBean("hibernateTemplate");
-        final List<t_user_info> tuilist = hibernateTemplate.loadAll(t_user_info.class);
-        redisTemplate.execute(new RedisCallback<Object>() {
+       final HibernateTemplate hibernateTemplate = (HibernateTemplate) ac.getBean("hibernateTemplate");
+        final long timeInterval = 1000;//定时任务时间间隔
+        Runnable runnable=new Runnable() {
+            public void run() {
+                while (true){
+                    final List<t_user_info> tuilist = hibernateTemplate.loadAll(t_user_info.class);
+                    redisTemplate.execute(new RedisCallback<Object>() {
 
-            public Object doInRedis(RedisConnection redisConnection) throws DataAccessException {
+                        public Object doInRedis(RedisConnection redisConnection) throws DataAccessException {
 
-                redisConnection.setNX("tuilist".getBytes(), SerializeUtil.serialize(tuilist));
+                            redisConnection.setNX("tuilist".getBytes(), SerializeUtil.serialize(tuilist));
 
-                return null;
+                            return null;
+                        }
+                    });
+                    try {
+                        Thread.sleep(timeInterval);
+
+
+                    }catch (InterruptedException e){
+                        e.printStackTrace();
+                    }
+
+
+                }
             }
-        });
+        };
+        Thread thread = new Thread(runnable);
+        thread.start();
+
 
     }
 
@@ -169,5 +171,43 @@ public class RedisTest {
 
 
     }
+/*
+    public static void  main(String[] args){
+        ApplicationContext ac = new ClassPathXmlApplicationContext("rest-servlet.xml");
+        final StringRedisTemplate redisTemplate = (StringRedisTemplate) ac.getBean("redisTemplate");
+        final HibernateTemplate hibernateTemplate = (HibernateTemplate) ac.getBean("hibernateTemplate");
+        final long timeInterval = 10000;//定时任务时间间隔
+        Runnable runnable=new Runnable() {
+            public void run() {
+                while (true){
+                    final List<t_user_info> tuilist = hibernateTemplate.loadAll(t_user_info.class);
+                    redisTemplate.execute(new RedisCallback<Object>() {
+
+                        public Object doInRedis(RedisConnection redisConnection) throws DataAccessException {
+
+                            redisConnection.setNX("tuilist".getBytes(), SerializeUtil.serialize(tuilist));
+                            return null;
+                        }
+                    });
+                    try {
+                        Thread.sleep(timeInterval);
+
+
+                    }catch (InterruptedException e){
+                        e.printStackTrace();
+                    }
+
+
+                }
+            }
+        };
+        Thread thread = new Thread(runnable);
+        thread.start();
+
+    }*/
+
+
+
+
 
 }

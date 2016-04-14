@@ -30,6 +30,7 @@ public class tUserInfoDaoImpl implements tUserInfoDao {
     }
 
 
+
     public List<t_user_info> getAll() {
         List<t_user_info> ll= (List<t_user_info>)redisTemplate.execute(new RedisCallback<Object>() {
 
@@ -45,5 +46,9 @@ public class tUserInfoDaoImpl implements tUserInfoDao {
     }
 
 
+
+    public t_user_info getuser() {
+        return null;
+    }
 
 }

@@ -3,6 +3,8 @@ package dw.spring3.rest.test;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import dw.spring3.rest.bean.t_user_info;
+import dw.spring3.rest.until.TuiList;
+import org.codehaus.jackson.map.DeserializationConfig;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistryBuilder;
@@ -27,7 +29,7 @@ public class RedisTest {
     private static SessionFactory sf;
     private StringRedisTemplate redisTemplate;
     private ApplicationContext ac;
-    private List<t_user_info> list;
+
 
     @Before
     public void setUp() throws Exception {
@@ -62,8 +64,8 @@ public class RedisTest {
         ac = new ClassPathXmlApplicationContext("rest-servlet.xml");
         redisTemplate = (StringRedisTemplate) ac.getBean("redisTemplate");
         HibernateTemplate hibernateTemplate = (HibernateTemplate) ac.getBean("hibernateTemplate");
-        list = hibernateTemplate.loadAll(t_user_info.class);
-/*        final String str = JSON.toJSONString(list);
+        final  List<t_user_info> list = hibernateTemplate.loadAll(t_user_info.class);
+/*      final String str = JSON.toJSONString(list);
         System.out.println(str);
         JSONArray jsonArray = JSONArray.parseArray(str);
 
@@ -76,7 +78,7 @@ public class RedisTest {
         System.out.println(jsonArray);*/
 
 
-        for (int i = 0; i < 100; i++) {
+        //for (int i = 0; i < 100; i++) {
 
 
         redisTemplate.execute(new RedisCallback<Object>() {
@@ -89,24 +91,25 @@ public class RedisTest {
                 byte[] key = serializer.serialize("huqiliang");
                 byte[] value =serializer.serialize(list.toString());
                 redisConnection.setNX(key,value);
+              //  redisTemplate.opsForHash().put("t_user_info","huqiliang",list.toString());
                 byte[] value1 = redisConnection.get(key);
                 String name = serializer.deserialize(value1);
-                try {
+        /*        try {
                     ObjectMapper objectMapper=new ObjectMapper();
-                    list=objectMapper.readValue(name,t_user_info.class);
+
+
+                    TuiList tuilist=objectMapper.readValue(name, TuiList.class);
+                    list=tuilist.getTuilist();
                 }catch (Exception e){
                         e.printStackTrace();
-                }
+                }*/
 
-
-
-
-                System.out.println(name);
+             //   System.out.println(name);
                 return null;
             }
         });
-        }
-        System.out.println("测试成功�?");
+       // }
+        System.out.println("测试成功");
     }
 
 

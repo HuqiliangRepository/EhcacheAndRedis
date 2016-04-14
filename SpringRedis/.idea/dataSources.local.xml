@@ -9,8 +9,9 @@
     </data-source>
     <data-source name="MySQL - dili_user @localhost" uuid="0f9c3322-f468-4d49-8f9c-f3441c0ddb2a">
       <secret-storage>master_key</secret-storage>
-      <first-sync>true</first-sync>
       <user-name>root</user-name>
+      <schema-pattern>dili_shop.* dili_user.* titan.*</schema-pattern>
+      <default-schemas>dili_shop.* dili_user.* titan.*</default-schemas>
     </data-source>
   </component>
 </project>

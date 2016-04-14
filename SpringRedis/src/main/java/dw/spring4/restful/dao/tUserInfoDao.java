@@ -12,5 +12,6 @@ import java.util.List;
 public interface tUserInfoDao {
 
     List<t_user_info> getAll();
+    t_user_info getuser();
 
 }
