@@ -35,7 +35,7 @@ public class tUserInfoDaoImpl implements tUserInfoDao {
         List<t_user_info> ll= (List<t_user_info>)redisTemplate.execute(new RedisCallback<Object>() {
 
             public Object doInRedis(RedisConnection redisConnection) throws DataAccessException {
-                byte[] value = redisConnection.get("tuilist".getBytes());
+                byte[] value = redisConnection.get("huqiliang".getBytes());
                 List<t_user_info> tuilist = (List<t_user_info>) SerializeUtil.unserialize(value);
                 return tuilist;
             }
@@ -46,8 +46,7 @@ public class tUserInfoDaoImpl implements tUserInfoDao {
     }
 
 
-
-    public t_user_info getuser() {
+    public t_user_info getuser(String user_id) {
         return null;
     }
 

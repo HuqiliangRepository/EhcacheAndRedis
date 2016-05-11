@@ -32,7 +32,6 @@ public class tUserInfoContorl {
     @RequestMapping(method = RequestMethod.GET, value = "/allusers")
     public ModelAndView getAll() {
         List<t_user_info> list = UIService.getAll();
-        System.out.println("查询所有注册用户帐号数量" + list.size());
         ModelAndView mv = new ModelAndView(XML_VIEW_NAME_ALL, "users", list);
         return mv;
 
