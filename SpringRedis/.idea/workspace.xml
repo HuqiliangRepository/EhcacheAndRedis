@@ -230,7 +230,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Ehcache/web/assets/plugins/ckeditor/LICENSE.md" afterPath="$PROJECT_DIR$/../Ehcache/web/assets/plugins/ckeditor/LICENSE.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Ehcache/web/assets/plugins/ckeditor/plugins/scayt/LICENSE.md" afterPath="$PROJECT_DIR$/../Ehcache/web/assets/plugins/ckeditor/plugins/scayt/LICENSE.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Ehcache/web/assets/plugins/ckeditor/plugins/wsc/LICENSE.md" afterPath="$PROJECT_DIR$/../Ehcache/web/assets/plugins/ckeditor/plugins/wsc/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dw/spring4/restful/contorl/LogggingControl.java" afterPath="$PROJECT_DIR$/src/main/java/dw/spring4/restful/contorl/LogggingControl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jartest/src/main/java/com/huqiliang/redis/Main.java" afterPath="$PROJECT_DIR$/../jartest/src/main/java/com/huqiliang/redis/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Ehcache/web/assets/plugins/ckeditor/README.md" afterPath="$PROJECT_DIR$/../Ehcache/web/assets/plugins/ckeditor/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Ehcache/web/assets/plugins/ckeditor/plugins/scayt/README.md" afterPath="$PROJECT_DIR$/../Ehcache/web/assets/plugins/ckeditor/plugins/scayt/README.md" />
@@ -1654,7 +1653,7 @@
       <workItem from="1462777274247" duration="4169000" />
       <workItem from="1462851496328" duration="3822000" />
       <workItem from="1462933260248" duration="13996000" />
-      <workItem from="1463017828471" duration="5741000" />
+      <workItem from="1463017828471" duration="5780000" />
     </task>
     <task id="LOCAL-00001" summary="redis存储业务对象实验成功，存储t_user_info对象经过序列话之后使用RedisTemplet存储成功">
       <created>1459143987498</created>
@@ -1680,11 +1679,17 @@
       <option name="project" value="LOCAL" />
       <updated>1463028803908</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="/*如果想获得HttpServletRequest与HttpServletResponse等对象直接在方法的参数当中直接申明就可以了*/&#10;    /*如果想实现从定向跳转，需要在方法返回时：return &quot;redirect:http://www.baidu.com&quot;这样子就可以实现页面重定向跳转*/">
+      <created>1463029010241</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1463029010241</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172311000" />
+    <option name="totallyTimeSpent" value="172350000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -1737,7 +1742,8 @@
     <MESSAGE value="使用mvc框架读取redis当中的t_user_info的数据，并显示到前端页面，（其中测试环节,利用单元测试，实验成功直接将List&lt;t_user_inf&gt;对象写入redis当中，然后在利用tUserInfoDaoImp将redis当中的数据读取出来，显示在前端页面当中）" />
     <MESSAGE value="添加了logging登录页面并且修改了CSS样式造成了错误" />
     <MESSAGE value="/*如果想获得HttpServletRequest与HttpServletResponse等对象直接在方法的参数当中直接申明就可以了*/" />
-    <option name="LAST_COMMIT_MESSAGE" value="/*如果想获得HttpServletRequest与HttpServletResponse等对象直接在方法的参数当中直接申明就可以了*/" />
+    <MESSAGE value="/*如果想获得HttpServletRequest与HttpServletResponse等对象直接在方法的参数当中直接申明就可以了*/&#10;    /*如果想实现从定向跳转，需要在方法返回时：return &quot;redirect:http://www.baidu.com&quot;这样子就可以实现页面重定向跳转*/" />
+    <option name="LAST_COMMIT_MESSAGE" value="/*如果想获得HttpServletRequest与HttpServletResponse等对象直接在方法的参数当中直接申明就可以了*/&#10;    /*如果想实现从定向跳转，需要在方法返回时：return &quot;redirect:http://www.baidu.com&quot;这样子就可以实现页面重定向跳转*/" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
