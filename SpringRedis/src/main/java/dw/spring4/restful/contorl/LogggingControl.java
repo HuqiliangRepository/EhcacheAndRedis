@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
  * Created by root on 5/11/16.
  */
 /*如果想获得HttpServletRequest与HttpServletResponse等对象直接在方法的参数当中直接申明就可以了*/
+    /*如果想实现从定向跳转，需要在方法返回时：return "redirect:http://www.baidu.com"这样子就可以实现页面重定向跳转*/
 @Controller
 @Component("Loggging")
 @SessionAttributes({"username", "password"})
