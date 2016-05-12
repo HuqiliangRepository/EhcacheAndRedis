@@ -79,27 +79,42 @@
                     <div class="table-responsive">
                         <table id="data-table" class="table table-striped table-bordered">
                             <thead>
-                            <form action="service/verification" method="post">
-                            <tr>
-                                <th>用户名称:</th>
-                                <th><input type="text" name="username"><br></th>
-                                <th>用户密码:</th>
-                                <th><input type="password" name="password"></th>
-                            </tr>
+                            <form action="/service/loggingverif" method="post">
                                 <tr>
-                                    <th></th>
-                                    <th></th>
-                                    <th><input type="submit" value="提交"></th>
-                                    <th></th>
+                                    <th>登录成功</th>
+
                                 </tr>
+
                             </form>
                             </thead>
                             <tbody>
 
                             <tr class="odd gradeX">
-
-
+                                <th>用户名</th>
+                                <td>${username}</td>
+                                <th>密码</th>
+                                <td>${password}</td>
                             </tr>
+                            <tr>
+                                <th>通过Request当中取得参数</th>
+                            </tr>
+                            <tr>
+                                <th>用户名</th>
+                                <td>${requestScope.username}</td>
+                                <th>密码</th>
+                                <td>${requestScope.password}</td>
+                            </tr>
+
+                            <tr>
+                                <th>通过Session当中取得参数</th>
+                            </tr>
+                            <tr>
+                                <th>用户名</th>
+                                <td>${sessionScope.username}</td>
+                                <th>密码</th>
+                                <td>${sessionScope.password}</td>
+                            </tr>
+
 
                             </tbody>
                         </table>

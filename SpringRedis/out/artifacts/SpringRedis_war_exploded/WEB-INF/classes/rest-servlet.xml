@@ -57,14 +57,14 @@
     <cache:annotation-driven cache-manager="cacheManager"/>
 
     <bean id="LogIntercepter" class="dw.spring4.restful.aop.LogIntercepter"/>
-      <aop:config>
-           <aop:pointcut id="controllePointcut" expression="execution(public * dw.spring4.restful.service.*.*(..))"/>
+    <aop:config>
+        <aop:pointcut id="controllePointcut" expression="execution(public * dw.spring4.restful.service.*.*(..))"/>
            <aop:aspect id="LogIntercepterAspect" ref="LogIntercepter">
                <aop:before method="beforelog" pointcut-ref="controllePointcut"/>
                <aop:after method="afterlog" pointcut-ref="controllePointcut"/>
                <aop:around method="aroundlog" pointcut-ref="controllePointcut"/>
            </aop:aspect>
-       </aop:config>
+    </aop:config>
 
 
     <!--下面是配置数据库的连接池bean-->

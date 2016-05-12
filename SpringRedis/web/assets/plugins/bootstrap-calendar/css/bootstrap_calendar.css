@@ -67,19 +67,15 @@
     background: #f0f0f0;
     color: #000;
 }
-
 .calendar .visualmonthyear {
     color: #000;
 }
-
 .noborder, .noborder .calendar, .noborder .calendar * {
     border: none !important;
 }
-
 .dropdown-menu .calendar td a {
     padding: 0px;
 }
-
 @media (max-width: 979px) {
     .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
         padding: 5px;

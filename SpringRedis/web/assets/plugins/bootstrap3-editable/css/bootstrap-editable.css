@@ -36,7 +36,7 @@
 }
 
 .editable-input {
-    vertical-align: top;
+    vertical-align: top; 
     display: inline-block; /* should be inline to take effect of parent's white-space: nowrap */
     width: auto; /* bootstrap-responsive has width: 100% that breakes layout */
     white-space: normal; /* reset white-space decalred in parent*/
@@ -56,14 +56,14 @@
 }
 
 .editableform-loading {
-    background: url('../img/loading.gif') center center no-repeat;
+    background: url('../img/loading.gif') center center no-repeat;  
     height: 25px;
     width: auto;
-    min-width: 25px;
+    min-width: 25px; 
 }
 
 .editable-inline .editableform-loading {
-    background-position: left 5px;
+    background-position: left 5px;      
 }
 
 .editable-error-block {
@@ -76,7 +76,7 @@
 /*add padding for jquery ui*/
 .editable-error-block.ui-state-error {
     padding: 3px;
-}
+}  
 
 .editable-error {
     color: red;
@@ -85,7 +85,7 @@
 /* ---- For specific types ---- */
 
 .editableform .editable-date {
-    padding: 0;
+    padding: 0; 
     margin: 0;
     float: left;
 }
@@ -96,21 +96,22 @@
     margin-left: 1px;
 }
 
+
 /* checklist vertical alignment */
-.editable-checklist label input[type="checkbox"],
+.editable-checklist label input[type="checkbox"], 
 .editable-checklist label span {
     vertical-align: middle;
     margin: 0;
 }
 
 .editable-checklist label {
-    white-space: nowrap;
+    white-space: nowrap; 
 }
 
 /* set exact width of textarea to fit buttons toolbar */
 .editable-wysihtml5 {
     width: 566px;
-    height: 250px;
+    height: 250px; 
 }
 
 /* clear button shown as link in date inputs */
@@ -144,22 +145,21 @@
 .editable-pre-wrapped {
     white-space: pre-wrap;
 }
-
 .editable-container.editable-popup {
     max-width: none !important; /* without this rule poshytip/tooltip does not stretch */
-}
+}  
 
 .editable-container.popover {
     width: auto; /* without this rule popover does not stretch */
 }
 
 .editable-container.editable-inline {
-    display: inline-block;
+    display: inline-block; 
     vertical-align: middle;
     width: auto;
     /* inline-block emulation for IE7*/
     zoom: 1;
-    *display: inline;
+    *display: inline;    
 }
 
 .editable-container.ui-widget {
@@ -168,14 +168,14 @@
 }
 
 .editable-click,
-a.editable-click,
+a.editable-click, 
 a.editable-click:hover {
     text-decoration: none;
     border-bottom: dashed 1px #0088cc;
 }
 
 .editable-click.editable-disabled,
-a.editable-click.editable-disabled,
+a.editable-click.editable-disabled, 
 a.editable-click.editable-disabled:hover {
     color: #585858;
     cursor: default;
@@ -231,24 +231,19 @@ a.editable-click.editable-disabled:hover {
       }*/
 
 }
-
 .datepicker-inline {
     width: 220px;
 }
-
 .datepicker.datepicker-rtl {
     direction: rtl;
 }
-
 .datepicker.datepicker-rtl table tr td span {
     float: right;
 }
-
 .datepicker-dropdown {
     top: 0;
     left: 0;
 }
-
 .datepicker-dropdown:before {
     content: '';
     display: inline-block;
@@ -260,7 +255,6 @@ a.editable-click.editable-disabled:hover {
     top: -7px;
     left: 6px;
 }
-
 .datepicker-dropdown:after {
     content: '';
     display: inline-block;
@@ -271,27 +265,21 @@ a.editable-click.editable-disabled:hover {
     top: -6px;
     left: 7px;
 }
-
 .datepicker > div {
     display: none;
 }
-
 .datepicker.days div.datepicker-days {
     display: block;
 }
-
 .datepicker.months div.datepicker-months {
     display: block;
 }
-
 .datepicker.years div.datepicker-years {
     display: block;
 }
-
 .datepicker table {
     margin: 0;
 }
-
 .datepicker td,
 .datepicker th {
     text-align: center;
@@ -302,29 +290,24 @@ a.editable-click.editable-disabled:hover {
     border-radius: 4px;
     border: none;
 }
-
 .table-striped .datepicker table tr td,
 .table-striped .datepicker table tr th {
     background-color: transparent;
 }
-
 .datepicker table tr td.day:hover {
     background: #eeeeee;
     cursor: pointer;
 }
-
 .datepicker table tr td.old,
 .datepicker table tr td.new {
     color: #999999;
 }
-
 .datepicker table tr td.disabled,
 .datepicker table tr td.disabled:hover {
     background: none;
     color: #999999;
     cursor: default;
 }
-
 .datepicker table tr td.today,
 .datepicker table tr td.today:hover,
 .datepicker table tr td.today.disabled,
@@ -343,7 +326,6 @@ a.editable-click.editable-disabled:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
     color: #000;
 }
-
 .datepicker table tr td.today:hover,
 .datepicker table tr td.today:hover:hover,
 .datepicker table tr td.today.disabled:hover,
@@ -366,7 +348,6 @@ a.editable-click.editable-disabled:hover {
 .datepicker table tr td.today.disabled:hover[disabled] {
     background-color: #fdf59a;
 }
-
 .datepicker table tr td.today:active,
 .datepicker table tr td.today:hover:active,
 .datepicker table tr td.today.disabled:active,
@@ -377,15 +358,12 @@ a.editable-click.editable-disabled:hover {
 .datepicker table tr td.today.disabled:hover.active {
     background-color: #fbf069 \9;
 }
-
 .datepicker table tr td.today:hover:hover {
     color: #000;
 }
-
 .datepicker table tr td.today.active:hover {
     color: #fff;
 }
-
 .datepicker table tr td.range,
 .datepicker table tr td.range:hover,
 .datepicker table tr td.range.disabled,
@@ -395,7 +373,6 @@ a.editable-click.editable-disabled:hover {
     -moz-border-radius: 0;
     border-radius: 0;
 }
-
 .datepicker table tr td.range.today,
 .datepicker table tr td.range.today:hover,
 .datepicker table tr td.range.today.disabled,
@@ -416,7 +393,6 @@ a.editable-click.editable-disabled:hover {
     -moz-border-radius: 0;
     border-radius: 0;
 }
-
 .datepicker table tr td.range.today:hover,
 .datepicker table tr td.range.today:hover:hover,
 .datepicker table tr td.range.today.disabled:hover,
@@ -439,7 +415,6 @@ a.editable-click.editable-disabled:hover {
 .datepicker table tr td.range.today.disabled:hover[disabled] {
     background-color: #f3e97a;
 }
-
 .datepicker table tr td.range.today:active,
 .datepicker table tr td.range.today:hover:active,
 .datepicker table tr td.range.today.disabled:active,
@@ -450,7 +425,6 @@ a.editable-click.editable-disabled:hover {
 .datepicker table tr td.range.today.disabled:hover.active {
     background-color: #efe24b \9;
 }
-
 .datepicker table tr td.selected,
 .datepicker table tr td.selected:hover,
 .datepicker table tr td.selected.disabled,
@@ -470,7 +444,6 @@ a.editable-click.editable-disabled:hover {
     color: #fff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-
 .datepicker table tr td.selected:hover,
 .datepicker table tr td.selected:hover:hover,
 .datepicker table tr td.selected.disabled:hover,
@@ -493,7 +466,6 @@ a.editable-click.editable-disabled:hover {
 .datepicker table tr td.selected.disabled:hover[disabled] {
     background-color: #808080;
 }
-
 .datepicker table tr td.selected:active,
 .datepicker table tr td.selected:hover:active,
 .datepicker table tr td.selected.disabled:active,
@@ -504,7 +476,6 @@ a.editable-click.editable-disabled:hover {
 .datepicker table tr td.selected.disabled:hover.active {
     background-color: #666666 \9;
 }
-
 .datepicker table tr td.active,
 .datepicker table tr td.active:hover,
 .datepicker table tr td.active.disabled,
@@ -524,7 +495,6 @@ a.editable-click.editable-disabled:hover {
     color: #fff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-
 .datepicker table tr td.active:hover,
 .datepicker table tr td.active:hover:hover,
 .datepicker table tr td.active.disabled:hover,
@@ -547,7 +517,6 @@ a.editable-click.editable-disabled:hover {
 .datepicker table tr td.active.disabled:hover[disabled] {
     background-color: #0044cc;
 }
-
 .datepicker table tr td.active:active,
 .datepicker table tr td.active:hover:active,
 .datepicker table tr td.active.disabled:active,
@@ -558,7 +527,6 @@ a.editable-click.editable-disabled:hover {
 .datepicker table tr td.active.disabled:hover.active {
     background-color: #003399 \9;
 }
-
 .datepicker table tr td span {
     display: block;
     width: 23%;
@@ -571,18 +539,15 @@ a.editable-click.editable-disabled:hover {
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
-
 .datepicker table tr td span:hover {
     background: #eeeeee;
 }
-
 .datepicker table tr td span.disabled,
 .datepicker table tr td span.disabled:hover {
     background: none;
     color: #999999;
     cursor: default;
 }
-
 .datepicker table tr td span.active,
 .datepicker table tr td span.active:hover,
 .datepicker table tr td span.active.disabled,
@@ -602,7 +567,6 @@ a.editable-click.editable-disabled:hover {
     color: #fff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-
 .datepicker table tr td span.active:hover,
 .datepicker table tr td span.active:hover:hover,
 .datepicker table tr td span.active.disabled:hover,
@@ -625,7 +589,6 @@ a.editable-click.editable-disabled:hover {
 .datepicker table tr td span.active.disabled:hover[disabled] {
     background-color: #0044cc;
 }
-
 .datepicker table tr td span.active:active,
 .datepicker table tr td span.active:hover:active,
 .datepicker table tr td span.active.disabled:active,
@@ -636,38 +599,31 @@ a.editable-click.editable-disabled:hover {
 .datepicker table tr td span.active.disabled:hover.active {
     background-color: #003399 \9;
 }
-
 .datepicker table tr td span.old,
 .datepicker table tr td span.new {
     color: #999999;
 }
-
 .datepicker th.datepicker-switch {
     width: 145px;
 }
-
 .datepicker thead tr:first-child th,
 .datepicker tfoot tr th {
     cursor: pointer;
 }
-
 .datepicker thead tr:first-child th:hover,
 .datepicker tfoot tr th:hover {
     background: #eeeeee;
 }
-
 .datepicker .cw {
     font-size: 10px;
     width: 12px;
     padding: 0 2px 0 5px;
     vertical-align: middle;
 }
-
 .datepicker thead tr:first-child th.cw {
     cursor: default;
     background-color: transparent;
 }
-
 .input-append.date .add-on i,
 .input-prepend.date .add-on i {
     display: block;
@@ -675,23 +631,19 @@ a.editable-click.editable-disabled:hover {
     width: 16px;
     height: 16px;
 }
-
 .input-daterange input {
     text-align: center;
 }
-
 .input-daterange input:first-child {
     -webkit-border-radius: 3px 0 0 3px;
     -moz-border-radius: 3px 0 0 3px;
     border-radius: 3px 0 0 3px;
 }
-
 .input-daterange input:last-child {
     -webkit-border-radius: 0 3px 3px 0;
     -moz-border-radius: 0 3px 3px 0;
     border-radius: 0 3px 3px 0;
 }
-
 .input-daterange .add-on {
     display: inline-block;
     width: auto;

@@ -70,18 +70,7 @@
                     selected = option.text();
                     selectedValue = option.val();
                 }
-            });
-            ;
-            ;
-            ;
-            ;
-            ;
-            ;
-            ;
-            ;
-            ;
-            ;
-            ;
+            })
             this.map = map;
             if (selected) {
                 this.$element.val(selected);
@@ -153,18 +142,7 @@
 
             items = $.grep(items, function (item) {
                 return that.matcher(item);
-            });
-            ;
-            ;
-            ;
-            ;
-            ;
-            ;
-            ;
-            ;
-            ;
-            ;
-            ;
+            })
 
             items = this.sorter(items);
 
@@ -214,18 +192,7 @@
                 i = $(that.options.item).attr('data-value', item);
                 i.find('a').html(that.highlighter(item));
                 return i[0];
-            });
-            ;
-            ;
-            ;
-            ;
-            ;
-            ;
-            ;
-            ;
-            ;
-            ;
-            ;
+            })
 
             items.first().addClass('active');
             this.$menu.html(items);

@@ -134,11 +134,9 @@
         function whitespace(s) {
             return s.split(/\s+/);
         }
-
         function nonword(s) {
             return s.split(/\W+/);
         }
-
         function getObjTokenizer(tokenizer) {
             return function setKey(key) {
                 return function tokenize(o) {
@@ -154,7 +152,6 @@
             this.hash = {};
             this.list = new List();
         }
-
         _.mixin(LruCache.prototype, {
             set: function set(key, val) {
                 var tailItem = this.list.tail, node;
@@ -183,7 +180,6 @@
         function List() {
             this.head = this.tail = null;
         }
-
         _.mixin(List.prototype, {
             add: function add(node) {
                 if (this.head) {
@@ -207,7 +203,6 @@
             this.val = val;
             this.prev = this.next = null;
         }
-
         return LruCache;
     }();
     var PersistentStorage = function () {
@@ -224,7 +219,6 @@
             this.ttlKey = "__ttl__";
             this.keyMatcher = new RegExp("^" + this.prefix);
         }
-
         if (ls && window.JSON) {
             methods = {
                 _prefix: function (key) {
@@ -283,24 +277,20 @@
         function now() {
             return new Date().getTime();
         }
-
         function encode(val) {
             return JSON.stringify(_.isUndefined(val) ? null : val);
         }
-
         function decode(val) {
             return JSON.parse(val);
         }
     }();
     var Transport = function () {
         var pendingRequestsCount = 0, pendingRequests = {}, maxPendingRequests = 6, requestCache = new LruCache(10);
-
         function Transport(o) {
             o = o || {};
             this._send = o.transport ? callbackToDeferred(o.transport) : $.ajax;
             this._get = o.rateLimiter ? o.rateLimiter(this._get) : this._get;
         }
-
         Transport.setMaxPendingRequests = function setMaxPendingRequests(num) {
             maxPendingRequests = num;
         };
@@ -322,11 +312,9 @@
                     cb && cb(null, resp);
                     requestCache.set(url, resp);
                 }
-
                 function fail() {
                     cb && cb(true);
                 }
-
                 function always() {
                     pendingRequestsCount--;
                     delete pendingRequests[url];
@@ -363,7 +351,6 @@
                         deferred.resolve(resp);
                     });
                 }
-
                 function onError(err) {
                     _.defer(function () {
                         deferred.reject(err);
@@ -382,7 +369,6 @@
             this.queryTokenizer = o.queryTokenizer;
             this.reset();
         }
-
         _.mixin(SearchIndex.prototype, {
             bootstrap: function bootstrap(o) {
                 this.datums = o.datums;
@@ -452,14 +438,12 @@
             });
             return tokens;
         }
-
         function newNode() {
             return {
                 ids: [],
                 children: {}
             };
         }
-
         function unique(array) {
             var seen = {}, uniques = [];
             for (var i = 0; i < array.length; i++) {
@@ -470,7 +454,6 @@
             }
             return uniques;
         }
-
         function getIntersection(arrayA, arrayB) {
             var ai = 0, bi = 0, intersection = [];
             arrayA = arrayA.sort(compare);
@@ -501,7 +484,6 @@
         function getLocal(o) {
             return o.local || null;
         }
-
         function getPrefetch(o) {
             var prefetch, defaults;
             defaults = {
@@ -523,7 +505,6 @@
             }
             return prefetch;
         }
-
         function getRemote(o) {
             var remote, defaults;
             defaults = {
@@ -554,7 +535,6 @@
                     return _.debounce(fn, wait);
                 };
             }
-
             function byThrottle(wait) {
                 return function (fn) {
                     return _.throttle(fn, wait);
@@ -588,7 +568,6 @@
             });
             this.storage = this.cacheKey ? new PersistentStorage(this.cacheKey) : null;
         }
-
         Bloodhound.noConflict = function noConflict() {
             root.Bloodhound = old;
             return Bloodhound;
@@ -695,12 +674,10 @@
             function sort(array) {
                 return array.sort(sortFn);
             }
-
             function noSort(array) {
                 return array;
             }
         }
-
         function ignoreDuplicates() {
             return false;
         }
@@ -771,14 +748,12 @@
     }
     var EventBus = function () {
         var namespace = "typeahead:";
-
         function EventBus(o) {
             if (!o || !o.el) {
                 $.error("EventBus initialized without el");
             }
             this.$el = $(o.el);
         }
-
         _.mixin(EventBus.prototype, {
             trigger: function (type) {
                 var args = [].slice.call(arguments, 1);
@@ -812,15 +787,12 @@
             }
             return this;
         }
-
         function onAsync(types, cb, context) {
             return on.call(this, "async", types, cb, context);
         }
-
         function onSync(types, cb, context) {
             return on.call(this, "sync", types, cb, context);
         }
-
         function off(types) {
             var type;
             if (!this._callbacks) {
@@ -832,7 +804,6 @@
             }
             return this;
         }
-
         function trigger(types) {
             var type, callbacks, args, syncFlush, asyncFlush;
             if (!this._callbacks) {
@@ -847,7 +818,6 @@
             }
             return this;
         }
-
         function getFlush(callbacks, context, args) {
             return flush;
             function flush() {
@@ -858,7 +828,6 @@
                 return !cancelled;
             }
         }
-
         function getNextTick() {
             var nextTickFn;
             if (window.setImmediate) {
@@ -876,7 +845,6 @@
             }
             return nextTickFn;
         }
-
         function bindContext(fn, context) {
             return fn.bind ? fn.bind(context) : function () {
                 fn.apply(context, [].slice.call(arguments, 0));
@@ -913,7 +881,6 @@
                 }
                 return !!match;
             }
-
             function traverse(el, hightlightTextNode) {
                 var childNode, TEXT_NODE_TYPE = 3;
                 for (var i = 0; i < el.childNodes.length; i++) {
@@ -1122,18 +1089,15 @@
                 textTransform: $input.css("text-transform")
             }).insertAfter($input);
         }
-
         function areQueriesEquivalent(a, b) {
             return Input.normalizeQuery(a) === Input.normalizeQuery(b);
         }
-
         function withModifier($e) {
             return $e.altKey || $e.ctrlKey || $e.metaKey || $e.shiftKey;
         }
     }();
     var Dataset = function () {
         var datasetKey = "ttDataset", valueKey = "ttValue", datumKey = "ttDatum";
-
         function Dataset(o) {
             o = o || {};
             o.templates = o.templates || {};
@@ -1151,7 +1115,6 @@
             this.templates = getTemplates(o.templates, this.displayFn);
             this.$el = $(html.dataset.replace("%CLASS%", this.name));
         }
-
         Dataset.extractDatasetName = function extractDatasetName(el) {
             return $(el).data(datasetKey);
         };
@@ -1181,7 +1144,6 @@
                         isEmpty: true
                     });
                 }
-
                 function getSuggestionsHtml() {
                     var $suggestions, nodes;
                     $suggestions = $(html.suggestions).css(css.suggestions);
@@ -1201,14 +1163,12 @@
                         return $el;
                     }
                 }
-
                 function getHeaderHtml() {
                     return that.templates.header({
                         query: query,
                         isEmpty: !hasSuggestions
                     });
                 }
-
                 function getFooterHtml() {
                     return that.templates.footer({
                         query: query,
@@ -1253,7 +1213,6 @@
                 return obj[display];
             }
         }
-
         function getTemplates(templates, displayFn) {
             return {
                 empty: templates.empty && _.templatify(templates.empty),
@@ -1265,7 +1224,6 @@
                 return "<p>" + displayFn(context) + "</p>";
             }
         }
-
         function isValidName(str) {
             return /^[_a-zA-Z0-9-]+$/.test(str);
         }
@@ -1289,7 +1247,6 @@
                 dataset.onSync("rendered", that._onRendered, that);
             });
         }
-
         _.mixin(Dropdown.prototype, EventEmitter, {
             _onSuggestionClick: function onSuggestionClick($e) {
                 this.trigger("suggestionClicked", $($e.currentTarget));
@@ -1432,7 +1389,6 @@
     }();
     var Typeahead = function () {
         var attrsKey = "ttAttrs";
-
         function Typeahead(o) {
             var $menu, $input, $hint;
             o = o || {};
@@ -1475,7 +1431,6 @@
             }).onSync("focused", this._onFocused, this).onSync("blurred", this._onBlurred, this).onSync("enterKeyed", this._onEnterKeyed, this).onSync("tabKeyed", this._onTabKeyed, this).onSync("escKeyed", this._onEscKeyed, this).onSync("upKeyed", this._onUpKeyed, this).onSync("downKeyed", this._onDownKeyed, this).onSync("leftKeyed", this._onLeftKeyed, this).onSync("rightKeyed", this._onRightKeyed, this).onSync("queryChanged", this._onQueryChanged, this).onSync("whitespaceChanged", this._onWhitespaceChanged, this);
             this._setLanguageDirection();
         }
-
         _.mixin(Typeahead.prototype, {
             _onSuggestionClicked: function onSuggestionClicked(type, $el) {
                 var datum;
@@ -1656,7 +1611,6 @@
             }
             return $input.wrap($wrapper).parent().prepend(withHint ? $hint : null).append($dropdown);
         }
-
         function getBackgroundStyles($el) {
             return {
                 backgroundAttachment: $el.css("background-attachment"),
@@ -1669,7 +1623,6 @@
                 backgroundSize: $el.css("background-size")
             };
         }
-
         function destroyDomStructure($node) {
             var $input = $node.find(".tt-input");
             _.each($input.data(attrsKey), function (val, key) {
@@ -1732,7 +1685,6 @@
                         typeahead.setVal(newVal);
                     }
                 }
-
                 function getVal($input) {
                     var typeahead, query;
                     if (typeahead = $input.data(typeaheadKey)) {

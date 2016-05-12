@@ -48,8 +48,8 @@
             this.$input.attr('id', 'textarea_' + (new Date()).getTime());
 
             this.setClass();
-            this.setAttr('placeholder');
-
+            this.setAttr('placeholder');            
+            
             //resolve deffered when widget loaded
             $.extend(this.options.wysihtml5, {
                 events: {
@@ -67,7 +67,7 @@
              */
             msieOld = /msie\s*(8|7|6)/.test(navigator.userAgent.toLowerCase());
             if (msieOld) {
-                this.$input.before('<br><br>');
+                this.$input.before('<br><br>'); 
             }
 
             return deferred.promise();

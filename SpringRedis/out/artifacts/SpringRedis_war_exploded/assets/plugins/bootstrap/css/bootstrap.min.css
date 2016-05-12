@@ -1618,17 +1618,16 @@ pre code {
     padding-left: 15px
 }
 
-.Absolute-Center {
+.Absolute-Center{
     width: 50%;
     height: 50%;
     overflow: auto;
     margin: auto;
     position: absolute;
-    top: 50;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    top: 50; left: 0; bottom: 0; right: 0;
 }
+
+
 
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
     float: left

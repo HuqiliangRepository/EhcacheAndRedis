@@ -49,10 +49,10 @@
         value2html: function (value, element) {
             if (!value) {
                 $(element).empty();
-                return;
+                return; 
             }
             var html = $('<div>').text(value.city).html() + ', ' + $('<div>').text(value.street).html() + ' st., bld. ' + $('<div>').text(value.building).html();
-            $(element).html(html);
+            $(element).html(html); 
         },
 
         /**

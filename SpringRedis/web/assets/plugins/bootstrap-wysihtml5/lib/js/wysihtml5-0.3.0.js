@@ -870,6 +870,7 @@ rangy.createModule("DomRange", function (api, module) {
         this.clonePartiallySelectedTextNodes = clonePartiallySelectedTextNodes;
 
 
+
         if (!range.collapsed) {
             this.sc = range.startContainer;
             this.so = range.startOffset;
@@ -1898,6 +1899,7 @@ rangy.createModule("WrappedRange", function (api, module) {
     var DomRange = api.DomRange;
 
 
+
     /*----------------------------------------------------------------------------------------------------------------*/
 
     /*
@@ -1949,6 +1951,7 @@ rangy.createModule("WrappedRange", function (api, module) {
             containerElement = wholeRangeContainerElement;
 
         }
+
 
 
         // Deal with nodes that cannot "contain rich HTML markup". In practice, this means form inputs, images and
@@ -2031,6 +2034,7 @@ rangy.createModule("WrappedRange", function (api, module) {
             // a position within that, and likewise for a start boundary preceding a character data node
             previousNode = (isCollapsed || !isStart) && workingNode.previousSibling;
             nextNode = (isCollapsed || isStart) && workingNode.nextSibling;
+
 
 
             if (nextNode && dom.isCharacterDataNode(nextNode)) {
@@ -2404,6 +2408,7 @@ rangy.createModule("WrappedRange", function (api, module) {
                 var tr = createBoundaryTextRange(new DomPosition(range.startContainer, range.startOffset), true);
 
 
+
                 return tr;
 
                 //return createBoundaryTextRange(new DomPosition(range.startContainer, range.startOffset), true);
@@ -2471,6 +2476,7 @@ rangy.createModule("WrappedSelection", function (api, module) {
         getSelection,
         selectionIsCollapsed,
         CONTROL = "Control";
+
 
 
     function getWinSelection(winParam) {
@@ -3920,10 +3926,10 @@ wysihtml5.lang.object = function (obj) {
                 return {
                     by: function (replace) {
                         return str.split(search).join(replace);
-                    }
+            }
                 }
             }
-        };
+    };
     };
 })();
 /**
@@ -4220,7 +4226,7 @@ wysihtml5.dom.convertToList = (function () {
  *
  * @param {Array} attributesToCopy List of attributes which should be copied
  * @return {Object} Returns an object which offers the "from" method which can be invoked with the element where to
- *    copy the attributes from., this again returns an object which provides a method named "to" which can be invoked
+ *    copy the attributes from., this again returns an object which provides a method named "to" which can be invoked 
  *    with the element where to copy the attributes to (see example)
  *
  * @example
@@ -4259,7 +4265,7 @@ wysihtml5.dom.copyAttributes = function (attributesToCopy) {
  *
  * @param {Array} stylesToCopy List of styles which should be copied
  * @return {Object} Returns an object which offers the "from" method which can be invoked with the element where to
- *    copy the styles from., this again returns an object which provides a method named "to" which can be invoked
+ *    copy the styles from., this again returns an object which provides a method named "to" which can be invoked 
  *    with the element where to copy the styles to (see example)
  *
  * @example
@@ -4316,9 +4322,9 @@ wysihtml5.dom.copyAttributes = function (attributesToCopy) {
                         dom.setStyles(cssText).on(element);
                         return {andTo: arguments.callee};
                     }
-                };
-            }
         };
+            }
+    };
     };
 })(wysihtml5.dom);
 /**
@@ -4352,7 +4358,7 @@ wysihtml5.dom.copyAttributes = function (attributesToCopy) {
  *
  * Fixing IE's inability to treat unknown elements (HTML5 section, article, ...) correctly
  * when inserted via innerHTML
- *
+ * 
  * @param {String} html The html which should be wrapped in a dom element
  * @param {Obejct} [context] Document object of the context the html belongs to
  *
@@ -4440,7 +4446,7 @@ wysihtml5.dom.getParentElement = (function () {
             return nodeName === desiredNodeNames;
         } else {
             return wysihtml5.lang.array(desiredNodeNames).contains(nodeName);
-        }
+    }
     }
 
     function _isElement(node) {
@@ -4560,7 +4566,7 @@ wysihtml5.dom.getStyle = (function () {
                     return returnValue;
                 }
             }
-        };
+    };
     };
 })();
 /**
@@ -4708,7 +4714,7 @@ wysihtml5.dom.observe = function (element, eventNames, handler) {
                     element.removeEventListener(eventName, handler, false);
                 } else {
                     element.detachEvent("on" + eventName, handlerWrapper);
-                }
+        }
             }
         }
     };
@@ -4950,7 +4956,7 @@ wysihtml5.dom.parse = (function () {
                 newAttributeValue = method(_getAttribute(oldNode, attributeName));
                 if (typeof(newAttributeValue) === "string") {
                     attributes[attributeName] = newAttributeValue;
-                }
+        }
             }
         }
 
@@ -4967,7 +4973,7 @@ wysihtml5.dom.parse = (function () {
                 newClass = method(_getAttribute(oldNode, attributeName));
                 if (typeof(newClass) === "string") {
                     classes.push(newClass);
-                }
+        }
             }
         }
 
@@ -5177,7 +5183,7 @@ wysihtml5.dom.removeEmptyTextNodes = function (node) {
         childNode = childNodes[i];
         if (childNode.nodeType === wysihtml5.TEXT_NODE && childNode.data === "") {
             childNode.parentNode.removeChild(childNode);
-        }
+    }
     }
 };
 /**
@@ -5217,7 +5223,7 @@ wysihtml5.dom.renameElement = function (element, newNodeName) {
 };
 /**
  * Takes an element, removes it and replaces it with it's childs
- *
+ * 
  * @param {Object} node The node which to replace with it's child nodes
  * @example
  *    <div id="foo">
@@ -5601,7 +5607,7 @@ wysihtml5.dom.replaceWithChildNodes = function (node) {
             on: function (element) {
                 for (var i in attributes) {
                     element.setAttribute(mapping[i] || i, attributes[i]);
-                }
+        }
             }
         }
     };
@@ -6416,13 +6422,13 @@ wysihtml5.quirks.cleanPastedHTML = (function () {
             el.className += " " + cssClass;
         } else {
             el.className = cssClass;
-        }
+    }
     }
 
     function removeClass(el, regExp) {
         if (el.className) {
             el.className = el.className.replace(regExp, "");
-        }
+    }
     }
 
     function hasSameClasses(el1, el2) {
@@ -6827,7 +6833,7 @@ wysihtml5.quirks.cleanPastedHTML = (function () {
 })(wysihtml5, rangy);
 /**
  * Rich Text Query/Formatting Commands
- *
+ * 
  * @example
  *    var commands = new wysihtml5.Commands(editor);
  */
@@ -7124,7 +7130,7 @@ wysihtml5.Commands = Base.extend(
             element.className += " " + className;
         } else {
             element.className = className;
-        }
+    }
     }
 
     function _removeClass(element, classRegExp) {
@@ -7189,14 +7195,14 @@ wysihtml5.Commands = Base.extend(
         }
         if (previousSibling && _isLineBreak(previousSibling)) {
             previousSibling.parentNode.removeChild(previousSibling);
-        }
+    }
     }
 
     function _removeLastChildIfLineBreak(node) {
         var lastChild = node.lastChild;
         if (lastChild && _isLineBreak(lastChild)) {
             lastChild.parentNode.removeChild(lastChild);
-        }
+    }
     }
 
     function _isLineBreak(node) {
@@ -7235,13 +7241,13 @@ wysihtml5.Commands = Base.extend(
                 if (displayStyle.substr(0, 6) !== "inline") {
                     // Make sure that only block elements receive the given class
                     target.className += " " + className;
-                }
+        }
             });
         }
         doc.execCommand(command, false, nodeName);
         if (eventListener) {
             eventListener.stop();
-        }
+    }
     }
 
     function _selectLineAndWrap(composer, element) {
@@ -7338,12 +7344,12 @@ wysihtml5.Commands = Base.extend(
  *      abcdefg|
  *   output:
  *      abcdefg<b>|</b>
- *
+ *   
  *   #2 unformatted text selected:
  *      abc|deg|h
  *   output:
  *      abc<b>|deg|</b>h
- *
+ *   
  *   #3 unformatted text selected across boundaries:
  *      ab|c <span>defg|h</span>
  *   output:
@@ -9100,7 +9106,7 @@ wysihtml5.views.Textarea = wysihtml5.views.View.extend(
  *
  * Current HTML5 draft can be found here
  * http://lists.w3.org/Archives/Public/public-xg-htmlspeech/2011Feb/att-0020/api-draft.html
- *
+ * 
  * "Accessing Google Speech API Chrome 11"
  * http://mikepultz.com/2011/03/accessing-google-speech-api-chrome-11/
  */
@@ -9157,18 +9163,7 @@ wysihtml5.views.Textarea = wysihtml5.views.View.extend(
         dom.insert(wrapper).into(link);
 
         dom.setStyles(inputStyles).on(input);
-        dom.setAttributes(inputAttributes).on(input);
-        ;
-        ;
-        ;
-        ;
-        ;
-        ;
-        ;
-        ;
-        ;
-        ;
-        ;
+        dom.setAttributes(inputAttributes).on(input)
 
         dom.setStyles(wrapperStyles).on(wrapper);
         dom.setStyles(linkStyles).on(link);

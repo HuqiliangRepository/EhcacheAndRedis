@@ -208,7 +208,7 @@
             define(['jquery'], factory);
         } else if (jQuery && !jQuery.fn.sparkline) {
             factory(jQuery);
-        }
+    }
     }
     (function ($) {
         'use strict';
@@ -352,7 +352,7 @@
                         }
                     }
                 }
-            };
+        };
         };
 
         // You can have tooltips use a css class other than jqstooltip by specifying tooltipClassname
@@ -447,7 +447,7 @@
                             return lookups[lookupkey].get(fieldvalue) || fieldvalue;
                         } else {
                             return lookups[lookupkey][fieldvalue] || fieldvalue;
-                        }
+                    }
                     }
                     if (isNumber(fieldvalue)) {
                         if (options.get('numberFormatter')) {
@@ -457,7 +457,7 @@
                                 options.get('numberDigitGroupCount'),
                                 options.get('numberDigitGroupSep'),
                                 options.get('numberDecimalMark'));
-                        }
+                    }
                     }
                     return fieldvalue;
                 });
@@ -492,7 +492,7 @@
                     vl = (values.length * q + 2) / 4;
                     return vl % 1 ? (values[Math.floor(vl)] + values[Math.floor(vl) - 1]) / 2 : values[vl - 1];
 
-                }
+            }
             }
         };
 
@@ -533,7 +533,7 @@
             for (i = 0, vl = vals.length; i < vl; i++) {
                 if (vals[i] !== filter) {
                     result.push(vals[i]);
-                }
+            }
             }
             return result;
         };
@@ -563,7 +563,7 @@
                 if (ignoreNull && arr[i] === null) continue;
                 if (arr[i] !== val) {
                     return false;
-                }
+            }
             }
             return true;
         };
@@ -624,7 +624,7 @@
                     // Neither Canvas nor VML are available
                     $.fn.sparkline.canvas = false;
                     return false;
-                }
+            }
             }
 
             if (width === undefined) {
@@ -660,7 +660,7 @@
                         range[1] = range[1].length === 0 ? Infinity : parseFloat(range[1]);
                         range[2] = map[key];
                         rangelist.push(range);
-                    }
+                }
                 }
                 this.map = map;
                 this.rangelist = rangelist || false;
@@ -767,7 +767,7 @@
                     sp = splist[i];
                     if (sp.clearRegionHighlight()) {
                         needsRefresh = true;
-                    }
+                }
                 }
 
                 if (needsRefresh) {
@@ -801,7 +801,7 @@
                     result = sp.setRegionHighlight(this.currentEl, localX, localY);
                     if (result) {
                         needsRefresh = true;
-                    }
+                }
                 }
                 if (needsRefresh) {
                     changeEvent = $.Event('sparklineRegionChange');
@@ -812,12 +812,12 @@
                         for (i = 0; i < spcount; i++) {
                             sp = splist[i];
                             tooltiphtml += sp.getCurrentRegionTooltip();
-                        }
+                    }
                         this.tooltip.setContent(tooltiphtml);
                     }
                     if (!this.disableHighlight) {
                         this.canvas.render();
-                    }
+                }
                 }
                 if (result === null) {
                     this.mouseleave();
@@ -1009,8 +1009,8 @@
                         for (i = pending.length; i; i--) {
                             if (pending[i - 1][0] == this) {
                                 pending.splice(i - 1, 1);
-                            }
                         }
+                    }
                     }
                     pending.push([this, render]);
                     $.data(this, '_jqs_pending', true);
@@ -1039,7 +1039,7 @@
                     // removing from the dom causes the data to be removed.
                     $.data(pending[i][0], '_jqs_pending', false);
                     done.push(i);
-                }
+            }
             }
             for (i = done.length; i; i--) {
                 pending.splice(done[i - 1], 1);
@@ -1263,8 +1263,8 @@
                             });
                             text = format.render(fields[j], options.get('tooltipValueLookups'), options);
                             entries.push('<div class="' + fclass + '">' + text + '</div>');
-                        }
                     }
+                }
                 }
                 if (entries.length) {
                     return header + entries.join('\n');
@@ -1290,9 +1290,9 @@
                         mult = color.length === 4 ? 16 : 1;
                         for (i = 0; i < 3; i++) {
                             rgbnew[i] = clipval(Math.round(parseInt(parse[i + 1], 16) * mult * lighten), 0, 255);
-                        }
-                        return 'rgb(' + rgbnew.join(',') + ')';
                     }
+                        return 'rgb(' + rgbnew.join(',') + ')';
+                }
 
                 }
                 return color;
@@ -1317,7 +1317,7 @@
                     } else {
                         target.replaceWithShape(shapeids, newShapes);
                         this.regionShapes[currentRegion] = newShapes.id;
-                    }
+                }
                 }
             },
 
@@ -1347,7 +1347,7 @@
                     } else {
                         // null value
                         regionShapes[i] = null;
-                    }
+                }
                 }
                 target.render();
             }
@@ -1377,7 +1377,7 @@
                 for (i = regionMap.length; i--;) {
                     if (regionMap[i] !== null && x >= regionMap[i][0] && x <= regionMap[i][1]) {
                         return regionMap[i][2];
-                    }
+                }
                 }
                 return undefined;
             },
@@ -1460,8 +1460,8 @@
                         } else {
                             yvalues.push(Number(val));
                             yminmax.push(Number(val));
-                        }
                     }
+                }
                 }
                 if (this.options.get('xvalues')) {
                     xvalues = this.options.get('xvalues');
@@ -1490,7 +1490,7 @@
                     }
                     if (normalRangeMax > this.maxy) {
                         this.maxy = normalRangeMax;
-                    }
+                }
                 }
                 if (options.get('chartRangeMin') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMin') < this.miny)) {
                     this.miny = options.get('chartRangeMin');
@@ -1572,7 +1572,7 @@
                         (options.get('minSpotColor') || options.get('maxSpotColor') &&
                         (yvalues[yvallast] === this.miny || yvalues[yvallast] === this.maxy))) {
                         canvasWidth -= Math.ceil(spotRadius);
-                    }
+                }
                 }
 
 
@@ -1600,7 +1600,7 @@
                             if (yvalues[i - 1] !== null) {
                                 path = [];
                                 paths.push(path);
-                            }
+                        }
                             vertices.push(null);
                         }
                     } else {
@@ -1617,7 +1617,7 @@
                         vertex = [xpos, canvasTop + Math.round(canvasHeight - (canvasHeight * ((y - this.miny) / rangey)))];
                         path.push(vertex);
                         vertices.push(vertex);
-                    }
+                }
                 }
 
                 lineShapes = [];
@@ -1638,7 +1638,7 @@
                             path[0] = [path[0][0], path[1][1]];
                         }
                         lineShapes.push(path);
-                    }
+                }
                 }
 
                 // draw the fill first, then optionally the normal range, then the line on top of that
@@ -1670,8 +1670,8 @@
                                 canvasTop + Math.round(canvasHeight - (canvasHeight * ((yvalues[i] - this.miny) / rangey))),
                                 spotRadius, undefined,
                                 color).append();
-                        }
                     }
+                }
 
                 }
                 if (spotRadius && options.get('spotColor') && yvalues[yvallast] !== null) {
@@ -1740,7 +1740,7 @@
                         if (groupMax > stackMax) {
                             stackMax = groupMax;
                         }
-                    }
+                }
                 }
 
                 this.stacked = stacked;
@@ -1781,9 +1781,9 @@
                                     }
                                 } else {
                                     stackRanges[i] += Math.abs(val - (val < 0 ? stackMax : stackMin));
-                                }
-                                numValues.push(val);
                             }
+                                numValues.push(val);
+                        }
                         }
                     } else {
                         val = chartRangeClip ? clipval(values[i], clipMin, clipMax) : values[i];
@@ -1791,7 +1791,7 @@
                         if (val !== null) {
                             numValues.push(val);
                         }
-                    }
+                }
                 }
                 this.max = max = Math.max.apply(Math, numValues);
                 this.min = min = Math.min.apply(Math, numValues);
@@ -1843,7 +1843,7 @@
                     this.colorMapByValue = options.get('colorMap');
                     if (this.colorMapByValue && this.colorMapByValue.get === undefined) {
                         this.colorMapByValue = new RangeMap(this.colorMapByValue);
-                    }
+                }
                 }
 
                 this.range = range;
@@ -1921,7 +1921,7 @@
                         return target.drawRect(x, y, this.barWidth - 1, 0, color, color);
                     } else {
                         return undefined;
-                    }
+                }
                 }
                 yoffsetNeg = yoffset;
                 for (i = 0; i < valcount; i++) {
@@ -1985,7 +1985,7 @@
                     this.colorMapByValue = options.get('colorMap');
                     if (this.colorMapByValue && this.colorMapByValue.get === undefined) {
                         this.colorMapByValue = new RangeMap(this.colorMapByValue);
-                    }
+                }
                 }
                 this.initTarget();
             },
@@ -2276,7 +2276,7 @@
                 if (values.length > 0) {
                     for (i = values.length; i--;) {
                         total += values[i];
-                    }
+                }
                 }
                 this.total = total;
                 this.initTarget();
@@ -2360,7 +2360,7 @@
                         shape = this.renderSlice(i).append();
                         this.valueShapes[i] = shape.id; // store just the shapeid
                         this.shapes[shape.id] = i;
-                    }
+                }
                 }
                 target.render();
             }
@@ -2466,7 +2466,7 @@
                     } else {
                         lwhisker = values[0];
                         rwhisker = values[vlen - 1];
-                    }
+                }
                 }
                 this.quartiles = [q1, q2, q3];
                 this.lwhisker = lwhisker;
@@ -2814,7 +2814,7 @@
                 for (i = shapeseq.length; i--;) {
                     if (shapeseq[i] == shapeid) {
                         shapeseq[i] = shape.id;
-                    }
+                }
                 }
                 delete this.shapes[shapeid];
             },
@@ -2833,7 +2833,7 @@
                         shapeseq.splice(i, 1);
                         delete this.shapes[sid];
                         first = i;
-                    }
+                }
                 }
                 for (i = shapes.length; i--;) {
                     shapeseq.splice(first, 0, shapes[i].id);
@@ -2850,7 +2850,7 @@
                         shapeseq.splice(i + 1, 0, shape.id);
                         this.shapes[shape.id] = shape;
                         return;
-                    }
+                }
                 }
             },
 
@@ -2861,7 +2861,7 @@
                     if (shapeseq[i] === shapeid) {
                         shapeseq.splice(i, 1);
                         break;
-                    }
+                }
                 }
                 delete this.shapes[shapeid];
             },

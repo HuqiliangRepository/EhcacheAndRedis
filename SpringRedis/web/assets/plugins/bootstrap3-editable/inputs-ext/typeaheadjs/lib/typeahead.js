@@ -173,14 +173,12 @@
     }();
     var EventBus = function () {
         var namespace = "typeahead:";
-
         function EventBus(o) {
             if (!o || !o.el) {
                 $.error("EventBus initialized without el");
             }
             this.$el = $(o.el);
         }
-
         utils.mixin(EventBus.prototype, {
             trigger: function (type) {
                 var args = [].slice.call(arguments, 1);
@@ -203,7 +201,6 @@
             this.ttlKey = "__ttl__";
             this.keyMatcher = new RegExp("^" + this.prefix);
         }
-
         if (ls && window.JSON) {
             methods = {
                 _prefix: function (key) {
@@ -262,11 +259,9 @@
         function now() {
             return new Date().getTime();
         }
-
         function encode(val) {
             return JSON.stringify(utils.isUndefined(val) ? null : val);
         }
-
         function decode(val) {
             return JSON.parse(val);
         }
@@ -279,7 +274,6 @@
             this.cache = {};
             this.cachedKeysByAge = [];
         }
-
         utils.mixin(RequestCache.prototype, {
             get: function (url) {
                 return this.cache[url];
@@ -298,7 +292,6 @@
     }();
     var Transport = function () {
         var pendingRequestsCount = 0, pendingRequests = {}, maxPendingRequests, requestCache;
-
         function Transport(o) {
             utils.bindAll(this);
             o = utils.isString(o) ? {
@@ -319,7 +312,6 @@
             };
             this._get = (/^throttle$/i.test(o.rateLimitFn) ? utils.throttle : utils.debounce)(this._get, o.rateLimitWait || 300);
         }
-
         utils.mixin(Transport.prototype, {
             _get: function (url, cb) {
                 var that = this;
@@ -368,11 +360,9 @@
         function incrementPendingRequests() {
             pendingRequestsCount++;
         }
-
         function decrementPendingRequests() {
             pendingRequestsCount--;
         }
-
         function belowPendingRequestsThreshold() {
             return pendingRequestsCount < maxPendingRequests;
         }
@@ -384,7 +374,6 @@
             itemHash: "itemHash",
             adjacencyList: "adjacencyList"
         };
-
         function Dataset(o) {
             utils.bindAll(this);
             if (utils.isString(o.template) && !o.engine) {
@@ -407,7 +396,6 @@
             this.adjacencyList = {};
             this.storage = o.name ? new PersistentStorage(o.name) : null;
         }
-
         utils.mixin(Dataset.prototype, {
             _processLocalData: function (data) {
                 this._mergeProcessedData(this._processData(data));
@@ -515,7 +503,7 @@
                     isMatch = isCandidate && utils.every(terms, function (term) {
                             return utils.some(item.tokens, function (token) {
                                 return token.indexOf(term) === 0;
-                            });
+                        });
                         });
                     isMatch && suggestions.push(item);
                 });
@@ -601,7 +589,6 @@
             this.query = this.$input.val();
             this.$overflowHelper = buildOverflowHelper(this.$input);
         }
-
         utils.mixin(InputView.prototype, EventTarget, {
             _handleFocus: function () {
                 this.trigger("focused");
@@ -693,7 +680,6 @@
                 textTransform: $input.css("text-transform")
             }).insertAfter($input);
         }
-
         function compareQueries(a, b) {
             a = (a || "").replace(/^\s*/g, "").replace(/\s{2,}/g, " ");
             b = (b || "").replace(/^\s*/g, "").replace(/\s{2,}/g, " ");
@@ -715,7 +701,6 @@
                 whiteSpace: "normal"
             }
         };
-
         function DropdownView(o) {
             utils.bindAll(this);
             this.isOpen = false;
@@ -723,7 +708,6 @@
             this.isMouseOverDropdown = false;
             this.$menu = $(o.menu).on("mouseenter.tt", this._handleMouseenter).on("mouseleave.tt", this._handleMouseleave).on("click.tt", ".tt-suggestion", this._handleSelection).on("mouseover.tt", ".tt-suggestion", this._handleMouseover);
         }
-
         utils.mixin(DropdownView.prototype, EventTarget, {
             _handleMouseenter: function () {
                 this.isMouseOverDropdown = true;
@@ -933,7 +917,6 @@
                 hint: $hint
             }).on("focused", this._openDropdown).on("blured", this._closeDropdown).on("blured", this._setInputValueToQuery).on("enterKeyed tabKeyed", this._handleSelection).on("queryChanged", this._clearHint).on("queryChanged", this._clearSuggestions).on("queryChanged", this._getSuggestions).on("whitespaceChanged", this._updateHint).on("queryChanged whitespaceChanged", this._openDropdown).on("queryChanged whitespaceChanged", this._setLanguageDirection).on("escKeyed", this._closeDropdown).on("escKeyed", this._setInputValueToQuery).on("tabKeyed upKeyed downKeyed", this._managePreventDefault).on("upKeyed downKeyed", this._moveDropdownCursor).on("upKeyed downKeyed", this._openDropdown).on("tabKeyed leftKeyed rightKeyed", this._autocomplete);
         }
-
         utils.mixin(TypeaheadView.prototype, EventTarget, {
             _managePreventDefault: function (e) {
                 var $e = e.data, hint, inputValue, preventDefault = false;
@@ -1082,7 +1065,6 @@
             }
             return $input.wrap($wrapper).parent().prepend($hint).append($dropdown);
         }
-
         function destroyDomStructure($node) {
             var $input = $node.find(".tt-query");
             utils.each($input.data("ttAttrs"), function (key, val) {

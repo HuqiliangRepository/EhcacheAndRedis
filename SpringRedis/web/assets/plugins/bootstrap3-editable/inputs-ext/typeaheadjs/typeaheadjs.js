@@ -54,7 +54,7 @@
                 }
             }
         }
-    });
+    });      
 
     Constructor.defaults = $.extend({}, $.fn.editabletypes.list.defaults, {
         /**
@@ -81,6 +81,6 @@
         clear: true
     });
 
-    $.fn.editabletypes.typeaheadjs = Constructor;
-
+    $.fn.editabletypes.typeaheadjs = Constructor;      
+    
 }(window.jQuery));
