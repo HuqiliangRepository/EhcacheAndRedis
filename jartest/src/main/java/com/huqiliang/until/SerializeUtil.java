@@ -57,7 +57,7 @@ public class SerializeUtil {
 
         } catch (Exception e) {
 
-
+            System.out.println(e);
 
         }
 

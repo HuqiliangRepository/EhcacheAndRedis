@@ -21,34 +21,28 @@ public class RedisTest {
         ApplicationContext ac = new ClassPathXmlApplicationContext("rest-servlet.xml");
         final StringRedisTemplate redisTemplate = (StringRedisTemplate) ac.getBean("redisTemplate");
         final HibernateTemplate hibernateTemplate = (HibernateTemplate) ac.getBean("hibernateTemplate");
-        final long timeInterval = 10000;//定时任务时间间隔
-        Runnable runnable=new Runnable() {
-            public void run() {
-                while (true){
-                    final List<t_user_info> tuilist = hibernateTemplate.loadAll(t_user_info.class);
-                    redisTemplate.execute(new RedisCallback<Object>() {
 
-                        public Object doInRedis(RedisConnection redisConnection) throws DataAccessException {
+        final List<t_user_info> tuilist = hibernateTemplate.loadAll(t_user_info.class);
+       redisTemplate.execute(new RedisCallback<Object>() {
 
-                            redisConnection.setNX("tuilist".getBytes(), SerializeUtil.serialize(tuilist));
+            public Object doInRedis(RedisConnection redisConnection) throws DataAccessException {
 
-                            return null;
-                        }
-                    });
-                    try {
-                        Thread.sleep(timeInterval);
+                redisConnection.setNX("tuilist".getBytes(), SerializeUtil.serialize(tuilist));
 
-
-                    }catch (InterruptedException e){
-                        e.printStackTrace();
-                    }
-
-
-                }
+                return null;
             }
-        };
-        Thread thread = new Thread(runnable);
-        thread.start();
+        });
+        List<t_user_info> ll=(List<t_user_info>)redisTemplate.execute(new RedisCallback<Object>() {
+
+            public Object doInRedis(RedisConnection redisConnection) throws DataAccessException {
+                byte[] value = redisConnection.get("tuilist".getBytes());
+                List<t_user_info> tuilist = (List<t_user_info>) SerializeUtil.unserialize(value);
+                System.out.println(value.length);
+                System.out.println(tuilist.toString());
+                return tuilist;
+            }
+
+        });
 
 
 

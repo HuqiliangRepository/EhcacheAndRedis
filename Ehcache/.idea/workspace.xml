@@ -7,103 +7,123 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1286812c-c990-4d54-ba90-c3b49855869b" name="Default" comment="redis测试成功，并且循环执行一白次">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../redisjar/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/java/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/src/main/java/com/huqiliang/redis/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__com_alibaba_fastjson_1_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__commons_pool_commons_pool_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__javassist_javassist_3_11_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__jstl_jstl_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__junit_junit_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_36.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_4_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__ognl_ognl_3_0_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_2_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_hibernate_ejb3_persistence_1_0_2_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_hibernate_hibernate_core_4_2_20_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_hibernate_hibernate_ehcache_4_2_2_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_1_spec_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_5_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_springframework_spring_aop_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_springframework_spring_aspects_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_springframework_spring_beans_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_springframework_spring_context_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_springframework_spring_context_support_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_springframework_spring_core_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_springframework_spring_expression_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_springframework_spring_jdbc_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_springframework_spring_orm_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_springframework_spring_tx_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_springframework_spring_web_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__org_springframework_spring_webmvc_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__redis_clients_jedis_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/src/main/java/com/huqiliang/until/SerializeUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/artifacts/SpringRedis_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dw/spring3/rest/until/TuiList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/src/main/resources/ehcache.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/src/main/resources/hibernate.cfg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/jartest.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/src/main/resources/jdbc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/src/main/resources/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/src/main/resources/redis.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/src/main/resources/rest-servlet.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/src/main/java/com/huqiliang/model/t_user_info.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/.idea/uiDesigner.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringRedis/.idea/artifacts/SpringRedis_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../testjar/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../redisjar/.idea/artifacts/redisclientjar.xml" afterPath="$PROJECT_DIR$/../redisjar/.idea/artifacts/redistest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dw/spring3/rest/test/EhcacheTest.class" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/test/EhcacheTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dw/spring3/rest/until/PageNoUtil.class" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/until/PageNoUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dw/spring3/rest/test/RedisTest$1.class" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/test/RedisTest$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dw/spring3/rest/test/RedisTest.class" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/test/RedisTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dw/spring3/rest/dao/impl/UserDAOImpl$1.class" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/dao/impl/UserDAOImpl$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dw/spring3/rest/dao/impl/UserDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/dao/impl/UserDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dw/spring3/rest/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dw/spring3/rest/controller/UsersController.class" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/controller/UsersController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dw/spring3/rest/bean/t_user_info.class" afterPath="$PROJECT_DIR$/target/classes/dw/spring3/rest/bean/t_user_info.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../redisjar/src/main/java/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/../redisjar/src/main/java/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dw/spring3/rest/test/RedisTest.java" afterPath="$PROJECT_DIR$/src/main/java/dw/spring3/rest/test/RedisTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/abstractFactory/AK47.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/abstractFactory/AbstractFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/abstractFactory/Apple.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DesignPattern/src/main/java/com/huqiliang/man/ArrayList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DesignPattern/src/test/java/ArrayListTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/abstractFactory/Car.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DesignPattern/src/main/java/com/huqiliang/Iterator/Cat.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Strategy/src/main/java/Cat.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Strategy/src/main/java/CatHeightComparator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Strategy/src/main/java/CatWeightComparator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DesignPattern/src/main/java/com/huqiliang/interfaces/Collection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Strategy/src/main/java/Comparable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Strategy/src/main/java/Comparator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Strategy/src/main/java/DataSorter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/abstractFactory/DefautFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Strategy/src/main/java/Dog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/abstractFactory/Food.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/tank/InvocationHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DesignPattern/src/main/java/com/huqiliang/interfaces/Iterator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DesignPattern/src/main/java/com/huqiliang/man/LinkList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/java/dw/spring4/restful/aop/LogIntercepter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/java/dw/spring4/restful/contorl/LogggingControl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DesignPattern/.idea/libraries/Maven__junit_junit_4_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/.idea/libraries/Maven__junit_junit_4_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__junit_junit_4_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DesignPattern/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/interf/Moveable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DesignPattern/src/main/java/com/huqiliang/man/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/Car/Plan.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/factory/PlanFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/Proxy.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jartest/src/main/java/com/huqiliang/redis/RedisTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/tank/TankLogProxy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/tank/TankTimeProxy_back.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/abstractFactory/Test.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Strategy/src/main/java/Test.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/test/java/TestCar.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/test/java/TestMethon.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/tank/TimeTankHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/Car/Train.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/factory/TrainFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/factory/VehicleFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/abstractFactory/Weapon.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/compiler/compilerTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/web/WEB-INF/jsp/logging.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/tank/proxy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SpringRedis/src/test/java/dw/spring4/restful/contorl/tUserInfoContorlTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/tank/tank1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/test/java/tank1Test.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DesignPattern/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/src/main/java/com/huqiliang/proxy/abstractFactory/vehical.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Proxy/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringRedis/.idea/libraries/Maven__junit_junit_4_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringRedis/out/artifacts/SpringRedis_war_exploded/WEB-INF/lib/junit-4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringRedis/target/test-classes/RedisTest$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../jartest/target/original-redisjar-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../jartest/target/redisjar-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../redisjar/target/classes/com/huqiliang/redis/RedisTest$1$1.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jartest/target/classes/com/huqiliang/redis/Main.class" afterPath="$PROJECT_DIR$/../jartest/target/classes/com/huqiliang/redis/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/target/test-classes/RedisTest$1.class" afterPath="$PROJECT_DIR$/../SpringRedis/target/test-classes/RedisTest$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../redisjar/target/classes/com/huqiliang/redis/RedisTest$1.class" afterPath="$PROJECT_DIR$/../redisjar/target/classes/com/huqiliang/redis/RedisTest$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/target/test-classes/RedisTest$2.class" afterPath="$PROJECT_DIR$/../SpringRedis/target/test-classes/RedisTest$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/target/test-classes/RedisTest$3.class" afterPath="$PROJECT_DIR$/../SpringRedis/target/test-classes/RedisTest$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/target/test-classes/RedisTest$4.class" afterPath="$PROJECT_DIR$/../SpringRedis/target/test-classes/RedisTest$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/target/test-classes/RedisTest.class" afterPath="$PROJECT_DIR$/../SpringRedis/target/test-classes/RedisTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../redisjar/target/classes/com/huqiliang/redis/RedisTest.class" afterPath="$PROJECT_DIR$/../redisjar/target/classes/com/huqiliang/redis/RedisTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/out/artifacts/SpringRedis_war_exploded/WEB-INF/classes/dw/spring4/restful/until/SerializeUtil.class" afterPath="$PROJECT_DIR$/../SpringRedis/out/artifacts/SpringRedis_war_exploded/WEB-INF/classes/dw/spring4/restful/until/SerializeUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/target/classes/dw/spring4/restful/until/SerializeUtil.class" afterPath="$PROJECT_DIR$/../SpringRedis/target/classes/dw/spring4/restful/until/SerializeUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jartest/target/classes/com/huqiliang/until/SerializeUtil.class" afterPath="$PROJECT_DIR$/../jartest/target/classes/com/huqiliang/until/SerializeUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../redisjar/target/classes/com/huqiliang/until/SerializeUtil.class" afterPath="$PROJECT_DIR$/../redisjar/target/classes/com/huqiliang/until/SerializeUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jartest/out/artifacts/jartest/jartest.jar" afterPath="$PROJECT_DIR$/../jartest/out/artifacts/jartest/jartest.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/out/artifacts/SpringRedis_war_exploded/WEB-INF/classes/dw/spring4/restful/contorl/tUserInfoContorl.class" afterPath="$PROJECT_DIR$/../SpringRedis/out/artifacts/SpringRedis_war_exploded/WEB-INF/classes/dw/spring4/restful/contorl/tUserInfoContorl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/target/classes/dw/spring4/restful/contorl/tUserInfoContorl.class" afterPath="$PROJECT_DIR$/../SpringRedis/target/classes/dw/spring4/restful/contorl/tUserInfoContorl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/out/artifacts/SpringRedis_war_exploded/WEB-INF/classes/dw/spring4/restful/dao/tUserInfoDao.class" afterPath="$PROJECT_DIR$/../SpringRedis/out/artifacts/SpringRedis_war_exploded/WEB-INF/classes/dw/spring4/restful/dao/tUserInfoDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/target/classes/dw/spring4/restful/dao/tUserInfoDao.class" afterPath="$PROJECT_DIR$/../SpringRedis/target/classes/dw/spring4/restful/dao/tUserInfoDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/out/artifacts/SpringRedis_war_exploded/WEB-INF/classes/dw/spring4/restful/dao/impl/tUserInfoDaoImpl$1.class" afterPath="$PROJECT_DIR$/../SpringRedis/out/artifacts/SpringRedis_war_exploded/WEB-INF/classes/dw/spring4/restful/dao/impl/tUserInfoDaoImpl$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/target/classes/dw/spring4/restful/dao/impl/tUserInfoDaoImpl$1.class" afterPath="$PROJECT_DIR$/../SpringRedis/target/classes/dw/spring4/restful/dao/impl/tUserInfoDaoImpl$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/out/artifacts/SpringRedis_war_exploded/WEB-INF/classes/dw/spring4/restful/dao/impl/tUserInfoDaoImpl.class" afterPath="$PROJECT_DIR$/../SpringRedis/out/artifacts/SpringRedis_war_exploded/WEB-INF/classes/dw/spring4/restful/dao/impl/tUserInfoDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/target/classes/dw/spring4/restful/dao/impl/tUserInfoDaoImpl.class" afterPath="$PROJECT_DIR$/../SpringRedis/target/classes/dw/spring4/restful/dao/impl/tUserInfoDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jartest/target/classes/com/huqiliang/model/t_user_info.class" afterPath="$PROJECT_DIR$/../jartest/target/classes/com/huqiliang/model/t_user_info.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jartest/src/main/java/com/huqiliang/redis/Main.java" afterPath="$PROJECT_DIR$/../jartest/src/main/java/com/huqiliang/redis/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/src/test/java/RedisTest.java" afterPath="$PROJECT_DIR$/../SpringRedis/src/test/java/RedisTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ehcache.xml" afterPath="$PROJECT_DIR$/target/classes/ehcache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/resources/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/target/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/../SpringRedis/target/classes/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/resources/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/../SpringRedis/target/classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../redisjar/pom.xml" afterPath="$PROJECT_DIR$/../redisjar/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/rest-servlet.xml" afterPath="$PROJECT_DIR$/src/main/resources/rest-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/rest-servlet.xml" afterPath="$PROJECT_DIR$/target/classes/rest-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dw/spring3/rest/bean/t_user_info.java" afterPath="$PROJECT_DIR$/src/main/java/dw/spring3/rest/bean/t_user_info.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../redisjar/src/main/java/com/huqiliang/redis/RedisTest.java" afterPath="$PROJECT_DIR$/../redisjar/src/main/java/com/huqiliang/redis/RedisTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/src/main/java/dw/spring4/restful/until/SerializeUtil.java" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/java/dw/spring4/restful/until/SerializeUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jartest/src/main/java/com/huqiliang/until/SerializeUtil.java" afterPath="$PROJECT_DIR$/../jartest/src/main/java/com/huqiliang/until/SerializeUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../redisjar/src/main/java/com/huqiliang/until/SerializeUtil.java" afterPath="$PROJECT_DIR$/../redisjar/src/main/java/com/huqiliang/until/SerializeUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/SpringRedis.iml" afterPath="$PROJECT_DIR$/../SpringRedis/SpringRedis.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jartest/dependency-reduced-pom.xml" afterPath="$PROJECT_DIR$/../jartest/dependency-reduced-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jartest/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/../jartest/src/main/resources/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jartest/target/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/../jartest/target/classes/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jartest/jartest.iml" afterPath="$PROJECT_DIR$/../jartest/jartest.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/out/artifacts/SpringRedis_war_exploded/assets/plugins/DataTables/js/jquery.dataTables.js" afterPath="$PROJECT_DIR$/../SpringRedis/out/artifacts/SpringRedis_war_exploded/assets/plugins/DataTables/js/jquery.dataTables.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/web/assets/plugins/DataTables/js/jquery.dataTables.js" afterPath="$PROJECT_DIR$/../SpringRedis/web/assets/plugins/DataTables/js/jquery.dataTables.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jartest/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../jartest/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/pom.xml" afterPath="$PROJECT_DIR$/../SpringRedis/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jartest/pom.xml" afterPath="$PROJECT_DIR$/../jartest/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/out/artifacts/SpringRedis_war_exploded/WEB-INF/classes/rest-servlet.xml" afterPath="$PROJECT_DIR$/../SpringRedis/out/artifacts/SpringRedis_war_exploded/WEB-INF/classes/rest-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/src/main/resources/rest-servlet.xml" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/resources/rest-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/target/classes/rest-servlet.xml" afterPath="$PROJECT_DIR$/../SpringRedis/target/classes/rest-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jartest/src/main/resources/rest-servlet.xml" afterPath="$PROJECT_DIR$/../jartest/src/main/resources/rest-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jartest/target/classes/rest-servlet.xml" afterPath="$PROJECT_DIR$/../jartest/target/classes/rest-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/src/main/java/dw/spring4/restful/contorl/tUserInfoContorl.java" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/java/dw/spring4/restful/contorl/tUserInfoContorl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/src/main/java/dw/spring4/restful/dao/tUserInfoDao.java" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/java/dw/spring4/restful/dao/tUserInfoDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/src/main/java/dw/spring4/restful/dao/impl/tUserInfoDaoImpl.java" afterPath="$PROJECT_DIR$/../SpringRedis/src/main/java/dw/spring4/restful/dao/impl/tUserInfoDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jartest/src/main/java/com/huqiliang/model/t_user_info.java" afterPath="$PROJECT_DIR$/../jartest/src/main/java/com/huqiliang/model/t_user_info.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SpringRedis/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../SpringRedis/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jartest/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../jartest/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../redisjar/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../redisjar/.idea/workspace.xml" />
     </list>
     <ignored path="Ehcache.iws" />
@@ -164,12 +184,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RedisTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RedisTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dw/spring3/rest/test/RedisTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.9531616">
               <caret line="108" column="13" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="e#2818#3856#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -191,11 +213,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/dw/spring3/rest/controller/UsersController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="84" selection-start-line="58" selection-start-column="84" selection-end-line="58" selection-end-column="84" />
+              <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#963#964#0" expanded="true" />
-                <element signature="e#1009#1010#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -211,12 +231,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDAOImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dw/spring3/rest/dao/impl/UserDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07259953">
+            <state vertical-scroll-proportion="0.0">
               <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="25" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#732#733#0" expanded="true" />
+                <element signature="e#772#773#0" expanded="true" />
+                <element signature="e#1571#1838#0" expanded="true" />
+                <element signature="e#1837#1838#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -225,12 +251,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/dw/spring3/rest/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+              <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
               <folding>
-                <element signature="e#383#384#0" expanded="true" />
-                <element signature="e#413#414#0" expanded="true" />
-                <element signature="e#496#497#0" expanded="true" />
-                <element signature="e#534#535#0" expanded="true" />
                 <element signature="e#597#598#0" expanded="true" />
                 <element signature="e#636#637#0" expanded="true" />
               </folding>
@@ -410,6 +432,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -470,6 +494,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ehcache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ehcache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -501,6 +543,66 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ehcache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ehcache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ehcache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ehcache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -594,6 +696,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ehcache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ehcache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="bean" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -614,9 +746,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -846,47 +976,6 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="HTML_USED" value="false" />
@@ -977,22 +1066,6 @@
       </option>
       <option name="moduleName" value="" />
       <option name="trusted" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
       <method />
     </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
@@ -1217,6 +1290,11 @@
       <workItem from="1459130961642" duration="3194000" />
       <workItem from="1459155948063" duration="2214000" />
       <workItem from="1460452961636" duration="638000" />
+      <workItem from="1460707147561" duration="22000" />
+      <workItem from="1461047226165" duration="169000" />
+      <workItem from="1461659348532" duration="52000" />
+      <workItem from="1462777152154" duration="117000" />
+      <workItem from="1462952804570" duration="21000" />
     </task>
     <task id="LOCAL-00001" summary="redis测试成功，并且循环执行一白次">
       <created>1458721421475</created>
@@ -1258,7 +1336,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136182000" />
+    <option name="totallyTimeSpent" value="136563000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1271,7 +1349,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1291,12 +1369,12 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11727079" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33358955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31635803" sideWeight="0.49721116" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3187251" sideWeight="0.49346405" order="4" side_tool="false" content_ui="combo" x="720" y="46" width="480" height="948" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29721117" sideWeight="0.49346405" order="4" side_tool="false" content_ui="combo" x="720" y="46" width="480" height="948" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2345679" sideWeight="0.86374503" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2345679" sideWeight="0.86374503" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4574944" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1307,16 +1385,16 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940239" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1625498" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940239" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31635803" sideWeight="0.50278884" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46604937" sideWeight="0.50278884" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46604937" sideWeight="0.50278884" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46604937" sideWeight="0.49721116" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
@@ -1336,8 +1414,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5169753" sideWeight="0.7498008" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11727079" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33358955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1403,7 +1481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="148" column="50" selection-start-line="148" selection-start-column="50" selection-end-line="148" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1439,7 +1516,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#1571#1838#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1461,7 +1544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1512,7 +1594,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#1571#1838#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1680,7 +1768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="35" selection-start-line="9" selection-start-column="0" selection-end-line="188" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1723,14 +1810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dw/spring3/rest/test/RedisTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="108" column="13" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dw/spring3/rest/until/TuiList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1750,33 +1829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dw/spring3/rest/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dw/spring3/rest/controller/UsersController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="84" selection-start-line="58" selection-start-column="84" selection-end-line="58" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1009#1010#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1785,11 +1837,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dw/spring3/rest/controller/UsersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dw/spring3/rest/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          <folding>
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dw/spring3/rest/dao/impl/UserDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07259953">
+        <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#1571#1838#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dw/spring3/rest/test/RedisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9531616">
+          <caret line="108" column="13" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="13" />
+          <folding>
+            <element signature="e#2818#3856#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
