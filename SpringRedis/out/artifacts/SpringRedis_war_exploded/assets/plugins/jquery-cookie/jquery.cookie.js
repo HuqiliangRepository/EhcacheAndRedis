@@ -32,7 +32,8 @@
 		}
 		try {
 			return config.json ? JSON.parse(s) : s;
-		} catch(er) {}
+		} catch (er) {
+		}
 	}
 
 	var config = $.cookie = function (key, value, options) {
@@ -53,9 +54,9 @@
 				'=',
 				config.raw ? value : encodeURIComponent(value),
 				options.expires ? '; expires=' + options.expires.toUTCString() : '', // use expires attribute, max-age is not supported by IE
-				options.path    ? '; path=' + options.path : '',
-				options.domain  ? '; domain=' + options.domain : '',
-				options.secure  ? '; secure' : ''
+				options.path ? '; path=' + options.path : '',
+				options.domain ? '; domain=' + options.domain : '',
+				options.secure ? '; secure' : ''
 			].join(''));
 		}
 
@@ -86,7 +87,7 @@
 	$.removeCookie = function (key, options) {
 		if ($.cookie(key) !== undefined) {
 			// Must not alter options, thus extending a fresh object...
-			$.cookie(key, '', $.extend({}, options, { expires: -1 }));
+			$.cookie(key, '', $.extend({}, options, {expires: -1}));
 			return true;
 		}
 		return false;

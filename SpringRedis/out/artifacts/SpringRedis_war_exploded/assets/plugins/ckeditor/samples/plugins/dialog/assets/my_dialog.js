@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or http://ckeditor.com/license
  */
 
-CKEDITOR.dialog.add( 'myDialog', function( editor ) {
+CKEDITOR.dialog.add('myDialog', function (editor) {
 	return {
 		title: 'My Dialog',
 		minWidth: 400,
@@ -24,8 +24,8 @@ CKEDITOR.dialog.add( 'myDialog', function( editor ) {
 						type: 'select',
 						label: 'Select Field',
 						items: [
-							[ 'option1', 'value1' ],
-							[ 'option2', 'value2' ]
+							['option1', 'value1'],
+							['option2', 'value2']
 						]
 					}
 				]
@@ -44,5 +44,5 @@ CKEDITOR.dialog.add( 'myDialog', function( editor ) {
 			}
 		]
 	};
-} );
+});
 

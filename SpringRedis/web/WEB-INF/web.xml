@@ -12,6 +12,10 @@
         </taglib>
     </jsp-config>
 
+    <error-page>
+        <error-code>404</error-code>
+        <location>/404.jsp</location>
+    </error-page>
 
     <context-param>
         <param-name>contextConfigLocation</param-name>

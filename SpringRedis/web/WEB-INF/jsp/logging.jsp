@@ -10,11 +10,11 @@
 <head>
     <base href="<%=basePath%>">
     <meta charset="utf-8"/>
-    <title>Color Admin | Dashboard v2</title>
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-          name="viewport"/>
+    <title>Color Admin | Login Page</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
     <meta content="" name="description"/>
     <meta content="" name="author"/>
+
     <!-- ================== BEGIN BASE CSS STYLE ================== -->
     <link href="http://fonts.useso.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link href="assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet"/>
@@ -25,94 +25,154 @@
     <link href="assets/css/style-responsive.min.css" rel="stylesheet"/>
     <link href="assets/css/theme/default.css" rel="stylesheet" id="theme"/>
     <!-- ================== END BASE CSS STYLE ================== -->
-
-    <!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
-    <link href="assets/plugins/DataTables/css/data-table.css" rel="stylesheet"/>
-    <!-- ================== END PAGE LEVEL STYLE ================== -->
-
-    <!-- ================== BEGIN BASE JS ================== -->
-    <script src="assets/plugins/pace/pace.min.js"></script>
-    <!-- ================== END BASE JS ================== -->
 </head>
 <body>
 <!-- begin #page-loader -->
-<div id="page-loader" class="fade in">
-    <span class="spinner"></span>
-</div>
+<div id="page-loader" class="fade in"><span class="spinner"></span></div>
 <!-- end #page-loader -->
-<div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
-
-    <%--&lt;%&ndash;这里是在页面背景图上面再加一个浮层，颜色为灰色，这里引用的登录界面当中定义好的浮层CSS&ndash;%&gt;--%>
+<div class="login-cover">
+    <div class="login-cover-image"><img src="assets/img/login-bg/bg-1.jpg" data-id="login-cover-image" alt="测试"/></div>
     <div class="login-cover-bg"></div>
-    <%--这里引用的登录界面当中定义好的浮层CSS结束--%>
 </div>
+<!-- begin #page-container -->
+<div id="page-container" class="fade">
 
-<!-- begin #content -->
-<div id="content" class="content">
-
-    <!-- begin page-header -->
-    <h1 class="page-header">Managed Tables
-        <small>登录页面</small>
-    </h1>
-    <!-- end page-header -->
-
-    <!-- begin row -->
-    <div class="row">
-        <!-- begin col-12 -->
-        <div class="col-md-12">
-            <!-- begin panel -->
-            <div class="panel panel-inverse">
-                <div class="panel-heading">
-                    <div class="panel-heading-btn">
-                        <a href="javascript:" class="btn btn-xs btn-icon btn-circle btn-default"
-                           data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                        <a href="javascript:" class="btn btn-xs btn-icon btn-circle btn-success"
-                           data-click="panel-reload"><i class="fa fa-repeat"></i></a>
-                        <a href="javascript:" class="btn btn-xs btn-icon btn-circle btn-warning"
-                           data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                        <a href="javascript:" class="btn btn-xs btn-icon btn-circle btn-danger"
-                           data-click="panel-remove"><i class="fa fa-times"></i></a>
-                    </div>
-                    <h4 class="panel-title">用户登录页面</h4>
+    <!-- begin login -->
+    <div class="login login-v2" data-pageload-addclass="animated flipInX">
+        <!-- begin brand -->
+        <div class="login-header">
+            <div class="brand">
+                <span class="logo"></span> 地&nbsp&nbsp利&nbsp&nbsp集&nbsp&nbsp团
+                <small>地利网络农业研发中心</small>
+            </div>
+            <div class="icon">
+                <i class="fa fa-sign-in"></i>
+            </div>
+        </div>
+        <!-- end brand -->
+        <div class="login-content">
+            <form action="service/verification" method="post" class="margin-bottom-0">
+                <div class="form-group m-b-20">
+                    <input type="text" class="form-control input-lg" placeholder="Email Address" name="username"/>
                 </div>
-                <div class="panel-body">
-                    <div class="table-responsive">
-                        <table id="data-table" class="table table-striped table-bordered">
-                            <thead>
-                            <form action="service/verification" method="post">
-                            <tr>
-                                <th>用户名称:</th>
-                                <th><input type="text" name="username"><br></th>
-                                <th>用户密码:</th>
-                                <th><input type="password" name="password"></th>
-                            </tr>
-                                <tr>
-                                    <th></th>
-                                    <th></th>
-                                    <th><input type="submit" value="提交"></th>
-                                    <th></th>
-                                </tr>
-                            </form>
-                            </thead>
-                            <tbody>
+                <div class="form-group m-b-20">
+                    <input type="text" class="form-control input-lg" placeholder="Password" name="password"/>
+                </div>
+                <div class="checkbox m-b-20">
+                    <label>
+                        <input type="checkbox"/> Remember Me
+                    </label>
+                </div>
+                <div class="login-buttons">
+                    <button type="submit" class="btn btn-success btn-block btn-lg">Sign me in</button>
+                </div>
+                <%--                <div class="m-t-20">
+                                    Not a member yet? Click <a href="#">here</a> to register.
+                                </div>--%>
+            </form>
+        </div>
+    </div>
+    <!-- end login -->
 
-                            <tr class="odd gradeX">
+    <ul class="login-bg-list">
+        <li class="active"><a href="#" data-click="change-bg"><img src="assets/img/login-bg/bg-1.jpg" alt=""/></a></li>
+        <li><a href="#" data-click="change-bg"><img src="assets/img/login-bg/bg-2.jpg" alt=""/></a></li>
+        <li><a href="#" data-click="change-bg"><img src="assets/img/login-bg/bg-3.jpg" alt=""/></a></li>
+        <li><a href="#" data-click="change-bg"><img src="assets/img/login-bg/bg-4.jpg" alt=""/></a></li>
+        <li><a href="#" data-click="change-bg"><img src="assets/img/login-bg/bg-5.jpg" alt=""/></a></li>
+        <li><a href="#" data-click="change-bg"><img src="assets/img/login-bg/bg-6.jpg" alt=""/></a></li>
+    </ul>
 
+    <!-- begin theme-panel -->
+    <div class="theme-panel">
+        <a href="javascript:;" data-click="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
 
-                            </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
+        <div class="theme-panel-content">
+            <h5 class="m-t-0">Color Theme</h5>
+            <ul class="theme-list clearfix">
+                <li class="active"><a href="javascript:;" class="bg-green" data-theme="default"
+                                      data-click="theme-selector" data-toggle="tooltip" data-trigger="hover"
+                                      data-container="body" data-title="Default">&nbsp;</a></li>
+                <li><a href="javascript:;" class="bg-red" data-theme="red" data-click="theme-selector"
+                       data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red">&nbsp;</a></li>
+                <li><a href="javascript:;" class="bg-blue" data-theme="blue" data-click="theme-selector"
+                       data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue">&nbsp;</a>
+                </li>
+                <li><a href="javascript:;" class="bg-purple" data-theme="purple" data-click="theme-selector"
+                       data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple">&nbsp;</a>
+                </li>
+                <li><a href="javascript:;" class="bg-orange" data-theme="orange" data-click="theme-selector"
+                       data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange">&nbsp;</a>
+                </li>
+                <li><a href="javascript:;" class="bg-black" data-theme="black" data-click="theme-selector"
+                       data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black">&nbsp;</a>
+                </li>
+            </ul>
+            <div class="divider"></div>
+            <div class="row m-t-10">
+                <div class="col-md-5 control-label double-line">Header Styling</div>
+                <div class="col-md-7">
+                    <select name="header-styling" class="form-control input-sm">
+                        <option value="1">default</option>
+                        <option value="2">inverse</option>
+                    </select>
                 </div>
             </div>
-            <!-- end panel -->
+            <div class="row m-t-10">
+                <div class="col-md-5 control-label">Header</div>
+                <div class="col-md-7">
+                    <select name="header-fixed" class="form-control input-sm">
+                        <option value="1">fixed</option>
+                        <option value="2">default</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row m-t-10">
+                <div class="col-md-5 control-label double-line">Sidebar Styling</div>
+                <div class="col-md-7">
+                    <select name="sidebar-styling" class="form-control input-sm">
+                        <option value="1">default</option>
+                        <option value="2">grid</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row m-t-10">
+                <div class="col-md-5 control-label">Sidebar</div>
+                <div class="col-md-7">
+                    <select name="sidebar-fixed" class="form-control input-sm">
+                        <option value="1">fixed</option>
+                        <option value="2">default</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row m-t-10">
+                <div class="col-md-5 control-label double-line">Sidebar Gradient</div>
+                <div class="col-md-7">
+                    <select name="content-gradient" class="form-control input-sm">
+                        <option value="1">disabled</option>
+                        <option value="2">enabled</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row m-t-10">
+                <div class="col-md-5 control-label double-line">Content Styling</div>
+                <div class="col-md-7">
+                    <select name="content-styling" class="form-control input-sm">
+                        <option value="1">default</option>
+                        <option value="2">black</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row m-t-10">
+                <div class="col-md-12">
+                    <a href="#" class="btn btn-inverse btn-block btn-sm" data-click="reset-local-storage"><i
+                            class="fa fa-refresh m-r-3"></i> Reset Local Storage</a>
+                </div>
+            </div>
         </div>
-        <!-- end col-12 -->
     </div>
-    <!-- end row -->
+    <!-- end theme-panel -->
 </div>
-<!-- end #content -->
 
 
 <!-- ================== BEGIN BASE JS ================== -->
@@ -130,15 +190,14 @@
 <!-- ================== END BASE JS ================== -->
 
 <!-- ================== BEGIN PAGE LEVEL JS ================== -->
-<script src="assets/plugins/DataTables/js/jquery.dataTables.js"></script>
-<script src="assets/js/table-manage-default.demo.min.js"></script>
+<script src="assets/js/login-v2.demo.min.js"></script>
 <script src="assets/js/apps.min.js"></script>
 <!-- ================== END PAGE LEVEL JS ================== -->
 
 <script>
     $(document).ready(function () {
         App.init();
-        TableManageDefault.init();
+        LoginV2.init();
     });
 </script>
 </body>
